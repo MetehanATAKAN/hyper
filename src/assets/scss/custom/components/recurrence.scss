@@ -1,0 +1,141 @@
+.recurrence-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: .7rem;
+    max-height: auto;
+    // height: 100%;
+    // overflow-y: auto;
+    padding: 1rem 1.3rem 1rem 1.3rem;
+    font-size: .8rem;
+    &__error{
+        color: red;
+    }
+    &__radios{
+        display: flex;
+        align-items: center;
+        &__input{
+            // width: 40%;
+            &__radio{
+                border-right: none;
+                height: 2rem;
+            }
+            &__text{
+                background-color: #fff;
+                height: inherit;
+                border-left: none;
+            }
+            .date-select{
+                width: 31%;
+                .react-select__control{
+                    border-right: 0;
+                    border-bottom-right-radius: 0;
+                    border-top-right-radius: 0;
+                }
+            }
+        }
+        &__radio{
+            // height: 2rem;
+            width: 40%;
+        }
+        .radio-btn{
+            margin-right: 1rem;
+        }
+    }
+    .recurrence-deadline{
+        display: flex;
+        flex-direction: column;
+        row-gap: .7rem;
+    }
+    &__datepick{
+        &__quarter{
+            display: flex;
+            flex-direction: column;
+            &__btns{
+                display: flex;
+                column-gap: .5rem;
+            }
+            .date-btns{
+                margin: 0;
+                padding: 0;
+                color: #495057;
+                font-weight: 600;
+                font-size: 1rem;
+                width: 8%;
+                height: 40px;
+            }
+        }
+       .recurrence-toggle-btns{
+        display: flex;
+        column-gap: .5rem;
+        width: 100%;
+        :nth-child(2)
+        {
+            border-radius: 10px;
+        }
+       }
+    }
+    // .react-select__menu {
+    //     max-height:120px !important;
+    //     overflow-y: hidden;
+    //   }
+    .react-select__single-value {
+         color: #62686b !important;
+    }
+}
+.radio-select{
+    margin: 0;
+    padding: 0;
+    margin-right: 1.3rem;
+}
+.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root{
+    height: 2.25rem;
+}
+// DESKTOP DATEPICKER
+// .css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped:not(:first-of-type){
+//     border-left: 1px solid rgba(0, 0, 0, 0.12)  !important;
+//     border-radius: 5px !important;
+// }
+// .css-1gjgmky-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped:not(:last-of-type) {
+//     border-top-right-radius: 5px !important;
+//     border-bottom-right-radius: 5px !important;
+// }
+// date picker without label
+.css-nnbavb{
+    float: left !important;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+    top: 0 !important;
+}
+//
+.recurrence-calendar{
+    z-index: 99;
+    position: absolute;
+    right: 8%;
+    top: 0;
+}
+.recurrence-calendar2{
+    z-index: 99;
+    position: absolute;
+    right: 18%;
+    bottom: -200%;
+}
+@media screen and (max-width: 768px){
+    .recurrence-container{
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .recurrence-calendar{
+        z-index: 99;
+        position: absolute;
+        right: 12%;
+        top: 0;
+    }
+    .recurrence-calendar2{
+        z-index: 99;
+        position: absolute;
+        right: 23%;
+        bottom: -200%;
+    }
+}
+.asd:focus{
+    box-shadow: none;
+}

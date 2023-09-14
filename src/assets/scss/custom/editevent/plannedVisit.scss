@@ -1,0 +1,89 @@
+.planned_visit {
+    .doctor_image{
+        border: 2px solid gray;
+        width: 75px;
+        height: 75px;
+        border-radius:75px;
+        &:hover {
+            background: transparent;
+            background-color: rgb(195, 193, 193);
+            opacity: 1.5;
+            transition: background-color 1s;
+            cursor: pointer;
+            ::after {
+                content: "\f030";
+                position: absolute;
+                right: 6px;
+                top: 15px;
+                font-size: 20px;
+                color: white;
+            }
+        }
+        i {
+            position: absolute;
+            margin: 10px 0 0 18px;
+            font-size: 40px !important;
+        }
+    }
+    .planned_visit_doctor_image {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 9999;
+        width: auto;
+        top: 90px;
+        #button_1 {
+            border: 1px solid gray !important;
+        }
+        #button_2 {
+            border: 1px solid gray !important;
+        }
+        button {
+            width: auto;
+            color: black !important;
+            font-weight: 600 !important;
+        }
+    }
+    .row {
+        :nth-child(2){
+            :nth-child(1){
+                color: #02A0DF;
+            }
+            :nth-child(2){
+                font-weight: 600;
+                color: black;
+            }
+        }
+    }
+    .promo_selects {
+        .react-select__control  {
+            background-color: #EFF2F7 !important;
+        }
+        .promo,.non_promo,.addinitonal_prometed {
+            margin-top: 20px;
+        }
+    }
+    .category_null{
+        color: red !important;
+    }
+}
+.promo_header{
+    color: black;
+    font-weight: 600;
+}
+.non_promo {
+        .react-select__multi-value {
+            background-color:#F1D7E5 !important ;
+            div {
+                color: #FC7CA9;
+            }
+        }
+}
+.addinitonal_prometed{ 
+    .react-select__multi-value {
+        background-color:#F1EACE !important ;
+        div {
+            color: #F8D367;
+        }
+    }
+}

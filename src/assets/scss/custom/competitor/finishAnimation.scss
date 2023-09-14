@@ -1,0 +1,302 @@
+
+
+.animation-circle{
+    
+}
+
+.animation-content{
+    position: relative;
+    z-index: 9;
+}
+.animation-check{
+    position: absolute;
+    font-size: 2.8rem;
+    color: #000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+}
+
+.animation-water-container{
+    position: absolute;
+}
+
+.animation-water{
+    position: relative;
+    background-color: #00A0DF;
+    height: 4.6rem;
+    width: 4.6rem;
+    outline: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 78%;
+    margin-top: -5.2rem;
+    // margin-right: 50%;
+    
+    &::before{
+        content: " ";
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    &::after{
+        content: " ";
+        height: 200%;
+        width: 200%;
+        position: absolute;
+        bottom: -50%;
+        left: -50%;
+        border-radius: 50%;
+        animation: spin 6s ease-in-out infinite;
+        background-color: white;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-100%) rotate(500deg);
+    }
+}
+
+.water-animation-bottle{
+    position: absolute;
+    left: 65%;
+    top: -10%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    z-index: 9;
+    font-size: 5rem;
+    color: #00A0DF;
+
+
+    &::before{
+        content: " ";
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    &::after{
+        content: " ";
+        height: 200%;
+        width: 200%;
+        position: absolute;
+        bottom: -50%;
+        left: -50%;
+        border-radius: 50%;
+        animation: spinn 6s ease-in-out infinite;
+        background-color: white;
+    }
+}
+
+@keyframes spinn {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-100%) rotate(500deg);
+    }
+}
+
+
+
+.wave-deneme{
+    position: absolute;
+    top: 25%;
+    left: 37.5%;
+}
+.shape {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  
+  .shape:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+    overflow: hidden;
+    z-index: 3;
+  }
+  
+  .wave {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transform: translate(-25%, 0);
+    background: #00A0DF;
+    animation: fill-up 10s ease forwards 2.6s ;
+  }
+  
+  @keyframes fill-up {
+    to {
+      top: -75%;
+    }
+  }
+  
+  .wave:before,
+  .wave:after {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+  }
+  
+  .wave:before {
+    border-radius: 45%;
+    background: #fff;
+    animation: animate 3s linear infinite;
+  }
+  
+  .wave:after {
+    border-radius: 40%;
+    background: #fff;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+
+//   .water-animation-line{
+//     width: 1rem;
+//     height: 5rem;
+//     color: red;
+//   }
+
+  .animation-bottle{
+    position: absolute;
+    overflow: hidden;
+    left: 71%;
+    top: -33.2%;
+    transform: translate(-50%,-50%) rotate(90deg) scale(0.9);
+    z-index: 9;
+    font-size: 3.5rem;
+    // fill: #00A0DF !important;
+    animation: animateRotate 3s forwards 1s;
+    
+  }
+
+  @keyframes animateRotate {
+    0% {
+      transform: translate(-50%,-50%) rotate(90deg) scale(0.9);
+    }
+    100% {
+      transform: translate(-50%,-50%) rotate(0deg) scale(0.9);
+    }
+  }
+
+  .water-animation-line{
+    position: absolute;
+    width: 133px;
+    height: 0px !important;
+    border: 3px solid #00A0DF;
+    transform: rotate(90deg);
+    background-color: #00A0DF;
+    top: 28%;
+    left: 27%;
+    opacity: 0;
+    animation: animateLine 3s forwards 2.6s;
+  }
+
+  .water-yamuk-line-container{
+    position: absolute;
+    top: -31.8%;
+    left: 49%;
+    .water-yamuk-line{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #00A0DF;
+        border-left: 6px solid transparent;
+        border-top: 6px solid transparent;
+        border-radius: 50px;
+        transform: rotate(135deg);
+        opacity: 0;
+        animation: animateLine 3s forwards 2.6s;
+        // animation: deleteLine 2s forwards 5.6s;
+      }
+  }
+  
+  @keyframes animateLine {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+    @keyframes deleteLine {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes removeRotateBottle {
+        0% {
+            transform: translate(-50%,-50%) rotate(0deg) scale(0.9);
+        }
+        100% {
+            transform: translate(-50%,-50%) rotate(90deg) scale(0.9);
+        }
+    }
+
+    @keyframes removeColor {
+        0% {
+            fill: #00A0DF;
+        }
+        100% {
+            fill: #fff;
+        }
+    }
+
+    .competitor-animation-body{
+        padding: 24px 24px 0 24px !important;
+
+        
+    }
+    .animation-finish-btn{
+        background-color: #00A0DF;
+        color: #fff;
+    }
+
+    .animation-modal-content{
+        h3{
+            font-size: 1.2rem;
+        }
+        div{
+            font-size: .7rem;
+        }
+    }

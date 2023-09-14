@@ -1,0 +1,316 @@
+@mixin table-btn-styles($bg-color, $fontColor) {
+    background-color: $bg-color;
+    border-color: $bg-color;
+    color: $fontColor;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+$border-color: $color-border-default;
+$bg-color: #eef2f7;
+#new-table-layout,
+.drag-drop-tables {
+    .MuiPaper-root {
+        box-shadow: none;
+        .Mui-ToolbarDropZone {
+            height: 45px;
+        }
+        .MuiAlert-standard {
+            background-color: $color-background-brand-on-subtle;
+        }
+    }
+    .MuiTable-root {
+        thead {
+            tr {
+                box-shadow: none;
+                th {
+                    border-right: 1px solid $border-color;
+                    border-color: $color-border-default;
+                    background-color: $color-background-neutral-subtle;
+                    @include typography-strong-base;
+                    color: $color-content-primary;
+                    .Mui-TableHeadCell-Content-Actions {
+                        button {
+                            color: $color-content-tertiary;
+                        }
+                    }
+                }
+            }
+        }
+        tbody {
+            td {
+                border-right: 1px solid $border-color;
+                border-color: $color-border-default;
+                color: $color-content-primary;
+                box-shadow: none;
+                @include typography-regular-base;
+            }
+        }
+        .MuiCheckbox-root {
+            svg {
+                width: 14px !important;
+                height: 14px !important;
+            }
+            color: $color-action-neutral-normal;
+            &:hover {
+                background-color: $color-action-ghost-hover;
+            }
+        }
+        .Mui-selected {
+            background-color: $color-interaction-default-subtle-normal;
+        }
+        [aria-label='Expand'],
+        [aria-label='Collapse'],
+        [aria-label='Expand all'],
+        [aria-label='Collapse All'] {
+            button {
+                color: $color-content-secondary;
+                &:hover {
+                    background-color: $color-action-ghost-hover;
+                }
+            }
+        }
+        .Mui-TableHeadCell-ResizeHandle-Wrapper {
+            right: 3px;
+        }
+        .table-data-cell-background-color {
+            border-radius: $border-radius-sm * 1px;
+            padding: $padding-xxs * 1px;
+        }
+    }
+    .MuiTablePagination-toolbar {
+        color: #000;
+        * {
+            @include typography-regular-base;
+        }
+        .MuiInputBase-root {
+            svg {
+                font-size: 24px;
+            }
+        }
+        .MuiTablePagination-actions {
+            svg {
+                font-size: 24px;
+            }
+        }
+    }
+    .table-top-toolbar-menu {
+        padding: 6px 0px 0px 0px;
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 0px 24px;
+        }
+        .table-filter-btn-active {
+            background-color: $bg-color;
+            border-radius: 50%;
+        }
+        .table-filter-area {
+            background-color: $bg-color;
+            width: 100%;
+            padding: 16px 24px;
+            margin-top: 6px;
+        }
+        .table-filter-buttons {
+            background-color: $bg-color;
+            display: flex;
+            gap: 4px;
+            justify-content: flex-end;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right: 24px;
+            .filter-buttons-apply {
+                @include table-btn-styles($color-action-primary-normal, #fff);
+            }
+            .filter-buttons-clear {
+                @include table-btn-styles(#fa5c7c, #fff);
+            }
+            .filter-buttons-close {
+                @include table-btn-styles(#6c757d, #fff);
+            }
+        }
+    }
+    .MuiAlert-message {
+        .MuiBox-root {
+            @include typography-regular-lg;
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+    .MuiChip-root {
+        @include typography-regular-base;
+
+        background-color: $color-content-brand-secondary;
+        .MuiChip-deleteIcon {
+            color: #fff;
+        }
+    }
+    .Mui-TableHeadCell-Content-Labels {
+        align-self: center;
+    }
+    .table-bulk-action-button-approval {
+        @include table-btn-styles(
+            $non-semantic-color-background-orange-muted,
+            $non-semantic-color-content-orange-primary
+        );
+    }
+    .table-bulk-action-button-approved {
+        @include table-btn-styles(
+            $non-semantic-color-background-green-muted,
+            $non-semantic-color-content-green-primary
+        );
+    }
+    .table-bulk-action-button-delete {
+        @include table-btn-styles(
+            $non-semantic-color-background-raspberry-muted,
+            $non-semantic-color-content-raspberry-primary
+        );
+    }
+    .table-new-button {
+        @include table-btn-styles($color-action-primary-normal, #fff);
+        display: inline-flex;
+    }
+    .Mui-TableHeadCell-Content-Actions {
+        button {
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+            &:last-child {
+                width: 18px;
+            }
+        }
+    }
+}
+
+@media print {
+    body {
+        visibility: hidden;
+    }
+    #new-table-layout {
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        top: 0;
+        .MuiToolbar-root {
+            visibility: hidden;
+        }
+    }
+}
+
+//GANT TABLE
+#new-gant-table-layout {
+    .MuiTextField-root {
+        input {
+            text-align: center;
+        }
+    }
+    .MuiPaper-root {
+        box-shadow: none;
+        .Mui-ToolbarDropZone {
+            height: 45px;
+        }
+    }
+    .MuiTable-root {
+        thead {
+            tr {
+                th {
+                    border: 1px solid $border-color;
+                }
+            }
+        }
+        tbody {
+            td {
+                &:nth-of-type(-n + 13) {
+                    border-right: 1px solid $border-color;
+                    text-align: center;
+                }
+                color: #6c757d;
+                box-shadow: none;
+            }
+        }
+        .MuiCheckbox-root {
+            svg {
+                width: 14px !important;
+                height: 14px !important;
+            }
+        }
+    }
+    .table-top-toolbar-menu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 6px 0px;
+        .table-filter-btn-active {
+            background-color: $bg-color;
+            border-radius: 0;
+        }
+        .table-filter-area {
+            background-color: $bg-color;
+            width: 100%;
+            padding: 16px 24px;
+        }
+    }
+    .MuiChip-deleteIcon {
+        color: #fff;
+    }
+    .Mui-TableHeadCell-Content-Labels {
+        align-self: center;
+    }
+    .table-new-button {
+        @include table-btn-styles(#00a0df, #0069df);
+        width: auto;
+        height: 28px;
+        text-transform: none;
+        align-self: center;
+    }
+    .gant-table-cell-view-has-data {
+        background-color: #00a0df;
+        height: 35px;
+        color: #fff;
+        display: grid;
+        place-items: center;
+    }
+    .gant-table-cell-view-no-data {
+        height: 35px;
+    }
+}
+
+.MuiTableCell-root:has(.full-cell) {
+    padding: 0 !important;
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+    .full-cell {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        padding-right: 8px;
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0;
+    }
+}
+.MuiTableCell-root:has(.row-color) {
+    padding: 0 !important;
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+    .full-cell {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-right: 8px;
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0;
+    }
+}

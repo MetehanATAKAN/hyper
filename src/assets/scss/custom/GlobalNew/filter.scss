@@ -1,0 +1,175 @@
+.global-filter{
+    // display: flex;
+    // padding: 1rem 1.5rem;
+    // gap: 1rem;
+    // align-items: center;
+    background-color: #F1F3FA;
+
+    .global-filter-container , .global-filter-container-no-table{
+
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: .8rem;
+        // align-items: center;
+
+        // display: flex;
+        // gap: .8rem;
+        // flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))!important;
+        gap: .8rem;
+        .label-text-field{
+            white-space: wrap;
+        }
+
+        .ant-select-multiple{
+            background-color: transparent;
+        }
+
+
+        .new-dropdown-select .ant-select-selector{
+            background-color: #FFFFFF!important;
+        }
+        .ant-select-multiple{
+
+            .ant-select-selection-item{
+                color: #6c757d;
+                background-color: #00A0DF2E;
+                border-color: #00A0DF40;
+                .ant-select-selection-item-content{
+                    padding-top: 1px;
+                }
+            }
+        }
+    }
+    .global-filter-container-no-table {
+        padding: 16px 24px;
+    }
+    .global-filter-buttons{
+        // align-self: flex-end;
+        // justify-self: end;
+        display: flex;
+        align-items: flex-end;
+        margin-left: auto;
+        column-gap: 4px;
+        flex-wrap: nowrap;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        button{
+            border: 1px solid #DEE2E6;
+            border-radius: 2px;
+            background-color: #FFFFFFCC;
+            width: 2rem;
+            height: 2rem;
+            padding: 0;
+            display: grid;
+            place-items: center;
+
+            svg, i{
+                width: 19px!important;
+                height: 19px!important;
+                display: grid;
+                place-items: center;
+            }
+        }
+
+        &__apply{
+            svg{
+                color: #0ACF97!important;
+            }
+        }
+        
+        &__delete{
+            i{
+                transform: matrix(0.87, -0.5, 0.5, 0.87, 0, 0);
+                color: #FA5C7C;
+            }
+        }
+
+        &__close{
+            svg{
+                color: #6C757D;
+            }
+        }
+
+    }
+
+    .global-filter__date-picker{
+        display: grid;
+        row-gap: 0px;
+        font-size: 12px;
+        .label-text-field{
+            font-weight: 500;
+            font-size: 12px;
+        }
+        .ant-picker-input input{
+            font-size: 12px;
+        }
+    }
+
+    .connect-material-filter-container-filters-date{
+        border-radius: 20px;
+        border: 1px solid #d9d9d9;
+        height: 24px;
+        background-color: #FFFFFF;
+        color: rgba(0, 0, 0, 0.85);
+    }
+
+    &__rage-picker{
+        margin: 0!important;
+        .ant-picker-input{
+            input{
+                font-size: 12px;
+            }
+        }
+        .ant-picker-range-separator{
+            line-height: normal!important;
+            .fa-arrow-right{
+                padding: 0;
+            }
+        }
+
+    }
+
+    &__range-date-col{
+        display: grid;
+        .label-text-field{
+            font-weight: 500;
+            font-size: 12px;
+        }
+        .ant-picker-input{
+            input{
+                font-size: 12px;
+            }
+        }
+
+        .ant-picker-range-separator{
+            line-height: normal!important;
+            .fa-arrow-right{
+                padding: 0;
+            }
+        }
+    }
+
+    .ant-select-selection-item{
+        font-size: 12px;
+    }
+    .ant-select-selection-placeholder{
+        font-size: 12px;
+    }
+
+    .global-filter__switch{
+        .form-switch{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            label{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: normal;
+                color: #6c757d;
+            }
+        }
+    }
+}

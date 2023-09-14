@@ -1,0 +1,59 @@
+$font-color:#6C757D;
+$background-color: #FAFBFE;
+.large-budget{
+    .modal-content{
+        margin: auto;
+        .ant-table-cell{
+            width: 70px !important;
+        }
+    }
+    .ant-table-thead {
+        .ant-table-cell{
+            color: $font-color;
+        }
+    }
+    .ant-table-wrapper{
+        overflow-y: auto;
+    }
+}
+#budget-modal{
+    .budget-modal-switch{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border: none;
+        background-color: $background-color;
+        color: $font-color;
+        margin-bottom: 16px;
+        font-size: 14.4px;
+        font-weight: 700;
+    }
+    .modal-body{
+        padding: 24px ;
+    }
+    .budget-select{
+        .error{border-color: red;}
+        .react-select__control{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .react-select__value-container{
+                padding-top: 5px;
+            }
+            .react-select__indicator{
+                padding-top: 4px;
+            }
+        }
+    }
+    span{
+        color:$font-color;
+        font-size: 14px;
+    }
+    .ant-select-selection-placeholder{
+        color: #adb5bd;
+    }
+}
+
+.budget-status-column{
+    padding: 0 !important;
+}

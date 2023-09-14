@@ -1,0 +1,102 @@
+.checklist-add{
+    .checklist-add-container{
+        padding: 1.2rem;
+        display: grid;
+        row-gap: 1rem;
+        &__list-name{
+            display: grid;
+            row-gap: .3rem;
+        }
+
+        &__select{
+            padding-top: 1rem;
+            display: grid;
+            row-gap: .3rem;
+            border-top: 1px solid #dee2e6;
+        }
+        &__select-form{
+            display: grid;
+            row-gap: .3rem;
+            grid-template-columns: 6.3fr 1fr;
+            column-gap: .5rem;
+        }
+        &__compulsory{
+            display: grid;
+            row-gap: .3rem;
+        }
+        &__compulsory-box{
+            height: 9rem;
+            max-height: 9rem;
+            overflow-y: auto;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: .5rem;
+        }
+        &__compulsory-item{
+            display: grid;
+            flex-wrap: nowrap;
+            grid-template-columns: 12fr 1fr;
+            column-gap: .5rem;
+            align-items: center;
+            img{
+                width: 1rem;
+                height: 1rem;
+            }
+            
+        }
+        &__compulsory-item-container{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            column-gap: .3rem;
+            padding: .5rem;
+            &:hover{
+                background-color: #f5f5f5;
+            }
+        }
+        &____compulsory-item-delete{
+            i{
+                font-size: 1.6rem;
+                color: #dee2e6;
+            }
+        }
+    }
+}
+.checklist-add-container__compulsory-item-delete{
+    display: grid;
+    place-items: center;
+    padding: .5rem;
+    border: none;
+    background-color: transparent;
+    i{
+        font-size: 1rem;
+        color: #dee2e6;
+    }
+    &:hover{
+        background-color: #ff679b;
+        color: #fff;
+    }
+}
+
+.checklist-add-container__compulsory-item{
+    left: auto !important;
+    top: auto !important;
+}
+
+
+// tom 
+
+.tom-add-container__compulsory-item{
+    left: auto !important;
+    top: auto !important;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    margin-top: .8rem;
+}
+
+.tom-add-container__compulsory-item-container{
+    display: flex;
+    align-items: center;
+    column-gap: .8rem;
+    padding: 6px 8px;
+}

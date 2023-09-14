@@ -1,0 +1,36 @@
+.custom-breadcrumbs {
+    @include typography-regular-base;
+    ol {
+        li {
+            display: flex;
+            align-items: center;
+            span,
+            span > * {
+                color: $color-action-neutral-normal;
+            }
+            &:last-child {
+                span,
+                span > * {
+                    color: $color-action-neutral-active;
+                }
+            }
+            .ant-breadcrumb-separator {
+                color: $color-content-tertiary;
+                padding: 0;
+            }
+        }
+        li > span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            border: 1px solid transparent;
+            border-radius: $border-radius * 1px;
+            padding: 0 4px;
+            &:hover {
+                background-color: $color-action-ghost-hover;
+                border: 1px solid $color-action-ghost-hover;
+                border-radius: $border-radius * 1px;
+            }
+        }
+    }
+}

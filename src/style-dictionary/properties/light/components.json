@@ -1,0 +1,918 @@
+{
+  "color": {
+    "Content": {
+      "Primary": {
+        "value": "{Neutral.120}",
+        "type": "color"
+      },
+      "Secondary": {
+        "value": "{Neutral.90}",
+        "type": "color"
+      },
+      "Tertiary": {
+        "value": "{Neutral.80}",
+        "type": "color"
+      },
+      "Disabled": {
+        "value": "{Neutral.70}",
+        "type": "color"
+      },
+      "InvertedPrimary": {
+        "value": "{color.WhiteA.130}",
+        "type": "color"
+      },
+      "InvertedSecondary": {
+        "value": "{color.WhiteA.90}",
+        "type": "color"
+      },
+      "InvertedTertiary": {
+        "value": "{color.WhiteA.80}",
+        "type": "color"
+      },
+      "InvertedDisabled": {
+        "value": "{color.WhiteA.70}",
+        "type": "color"
+      },
+      "InvertedDisabled-copy": {
+        "value": "DD7373",
+        "type": "color"
+      },
+      "Informative": {
+        "Primary": {
+          "value": "{Informative.120}",
+          "type": "color"
+        },
+        "Secondary": {
+          "value": "{Informative.90}",
+          "type": "color"
+        }
+      },
+      "Positive": {
+        "Primary": {
+          "value": "{Positive.120}",
+          "type": "color"
+        },
+        "Secondary": {
+          "value": "{Positive.90}",
+          "type": "color"
+        }
+      },
+      "Warning": {
+        "Primary": {
+          "value": "{Warning.120}",
+          "type": "color"
+        },
+        "Secondary": {
+          "value": "{Warning.90}",
+          "type": "color"
+        }
+      },
+      "Negative": {
+        "Primary": {
+          "value": "{Negative.120}",
+          "type": "color"
+        },
+        "Secondary": {
+          "value": "{Negative.90}",
+          "type": "color"
+        }
+      },
+      "Brand": {
+        "Primary": {
+          "value": "{color.Blue.120}",
+          "type": "color"
+        },
+        "Secondary": {
+          "value": "{color.Blue.90}",
+          "type": "color"
+        }
+      }
+    },
+    "Border": {
+      "Default": {
+        "value": "{Neutral.40}",
+        "type": "color"
+      },
+      "DefaultA": {
+        "value": "{NeutralA.40}",
+        "type": "color"
+      },
+      "Inverted": {
+        "value": "{color.WhiteA.130}",
+        "type": "color"
+      },
+      "Neutral": {
+        "Strong": {
+          "value": "{Neutral.90}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Neutral.60}",
+          "type": "color"
+        }
+      },
+      "Informative": {
+        "Strong": {
+          "value": "{Informative.90}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Informative.60}",
+          "type": "color"
+        }
+      },
+      "Positive": {
+        "Strong": {
+          "value": "{Positive.90}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Positive.60}",
+          "type": "color"
+        }
+      },
+      "Warning": {
+        "Strong": {
+          "value": "{Warning.90}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Warning.60}",
+          "type": "color"
+        }
+      },
+      "Negative": {
+        "Strong": {
+          "value": "{Negative.90}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Negative.60}",
+          "type": "color"
+        }
+      },
+      "Brand": {
+        "Strong": {
+          "value": "{Brand.90}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Brand.60}",
+          "type": "color"
+        }
+      }
+    },
+    "Background": {
+      "Default": {
+        "value": "{color.WhiteA.130}",
+        "type": "color"
+      },
+      "Inverted": {
+        "value": "{Neutral.130}",
+        "type": "color"
+      },
+      "Neutral": {
+        "Strong": {
+          "value": "{Neutral.90}",
+          "type": "color"
+        },
+        "Muted": {
+          "value": "{Neutral.50}",
+          "type": "color"
+        },
+        "OnSubtle": {
+          "value": "{Neutral.40}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Neutral.20}",
+          "type": "color"
+        },
+        "Surface": {
+          "value": "{Neutral.10}",
+          "type": "color"
+        }
+      },
+      "Informative": {
+        "Strong": {
+          "value": "{Informative.90}",
+          "type": "color"
+        },
+        "Muted": {
+          "value": "{Informative.50}",
+          "type": "color"
+        },
+        "OnSubtle": {
+          "value": "{Informative.40}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Informative.20}",
+          "type": "color"
+        },
+        "Surface": {
+          "value": "{Informative.10}",
+          "type": "color"
+        }
+      },
+      "Positive": {
+        "Strong": {
+          "value": "{Positive.90}",
+          "type": "color"
+        },
+        "Muted": {
+          "value": "{Positive.50}",
+          "type": "color"
+        },
+        "OnSubtle": {
+          "value": "{Positive.40}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Positive.20}",
+          "type": "color"
+        },
+        "Surface": {
+          "value": "{Positive.10}",
+          "type": "color"
+        }
+      },
+      "Warning": {
+        "Strong": {
+          "value": "{Warning.90}",
+          "type": "color"
+        },
+        "Muted": {
+          "value": "{Warning.50}",
+          "type": "color"
+        },
+        "OnSubtle": {
+          "value": "{Warning.40}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Warning.20}",
+          "type": "color"
+        },
+        "Surface": {
+          "value": "{Warning.10}",
+          "type": "color"
+        }
+      },
+      "Negative": {
+        "Strong": {
+          "value": "{Negative.90}",
+          "type": "color"
+        },
+        "Muted": {
+          "value": "{Negative.50}",
+          "type": "color"
+        },
+        "OnSubtle": {
+          "value": "{Negative.40}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Negative.20}",
+          "type": "color"
+        },
+        "Surface": {
+          "value": "{Negative.10}",
+          "type": "color"
+        }
+      },
+      "Brand": {
+        "Strong": {
+          "value": "{Brand.90}",
+          "type": "color"
+        },
+        "Muted": {
+          "value": "{Brand.50}",
+          "type": "color"
+        },
+        "OnSubtle": {
+          "value": "{Brand.40}",
+          "type": "color"
+        },
+        "Subtle": {
+          "value": "{Brand.20}",
+          "type": "color"
+        },
+        "Surface": {
+          "value": "{Brand.10}",
+          "type": "color"
+        }
+      }
+    },
+    "Action": {
+      "Primary": {
+        "Normal": {
+          "value": "{Brand.90}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Brand.110}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Brand.120}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{Brand.110}",
+          "type": "color"
+        },
+        "SubtleNormal": {
+          "value": "{Brand.30}",
+          "type": "color"
+        },
+        "SubtleHover": {
+          "value": "{Brand.40}",
+          "type": "color"
+        },
+        "SubtleActive": {
+          "value": "{Brand.60}",
+          "type": "color"
+        },
+        "SubtleSelected": {
+          "value": "{Brand.40}",
+          "type": "color"
+        }
+      },
+      "Neutral": {
+        "Normal": {
+          "value": "{Neutral.100}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Neutral.110}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Neutral.120}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{Neutral.110}",
+          "type": "color"
+        },
+        "SubtleNormal": {
+          "value": "{Neutral.30}",
+          "type": "color"
+        },
+        "SubtleHover": {
+          "value": "{Neutral.40}",
+          "type": "color"
+        },
+        "SubtleActive": {
+          "value": "{Neutral.60}",
+          "type": "color"
+        },
+        "SubtleSelected": {
+          "value": "{Neutral.40}",
+          "type": "color"
+        }
+      },
+      "Success": {
+        "Normal": {
+          "value": "{Positive.90}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Positive.110}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Positive.120}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{Positive.110}",
+          "type": "color"
+        },
+        "SubtleNormal": {
+          "value": "{Positive.30}",
+          "type": "color"
+        },
+        "SubtleHover": {
+          "value": "{Positive.40}",
+          "type": "color"
+        },
+        "SubtleActive": {
+          "value": "{Positive.60}",
+          "type": "color"
+        },
+        "SubtleSelected": {
+          "value": "{Positive.40}",
+          "type": "color"
+        }
+      },
+      "Destructive": {
+        "Normal": {
+          "value": "{Negative.90}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Negative.110}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Negative.120}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{Negative.110}",
+          "type": "color"
+        },
+        "SubtleNormal": {
+          "value": "{Negative.30}",
+          "type": "color"
+        },
+        "SubtleHover": {
+          "value": "{Negative.40}",
+          "type": "color"
+        },
+        "SubtleActive": {
+          "value": "{Negative.60}",
+          "type": "color"
+        },
+        "SubtleSelected": {
+          "value": "{Negative.40}",
+          "type": "color"
+        }
+      },
+      "Ghost": {
+        "Normal": {
+          "value": "{color.WhiteA.0}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{NeutralA.30}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{NeutralA.40}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{NeutralA.30}",
+          "type": "color"
+        },
+        "InvertedHover": {
+          "value": "{color.WhiteA.50}",
+          "type": "color"
+        },
+        "InvertedActive": {
+          "value": "{color.WhiteA.60}",
+          "type": "color"
+        },
+        "InvertedSelected": {
+          "value": "{color.WhiteA.50}",
+          "type": "color"
+        },
+        "DestructiveHover": {
+          "value": "{Negative.30}",
+          "type": "color"
+        },
+        "DestructiveActive": {
+          "value": "{Negative.40}",
+          "type": "color"
+        },
+        "DestructiveSelected": {
+          "value": "{Negative.30}",
+          "type": "color"
+        }
+      },
+      "Outline": {
+        "Normal": {
+          "value": "{Neutral.60}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Neutral.70}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Neutral.80}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{Neutral.70}",
+          "type": "color"
+        }
+      },
+      "Inverted": {
+        "Normal": {
+          "value": "{color.WhiteA.130}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.WhiteA.140}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.WhiteA.120}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{color.WhiteA.140}",
+          "type": "color"
+        }
+      },
+      "ReverseInverted": {
+        "Normal": {
+          "value": "{NeutralA.120}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{NeutralA.100}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{NeutralA.90}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{NeutralA.100}",
+          "type": "color"
+        }
+      },
+      "SideMenu": {
+        "Normal": {
+          "value": "{color.CoolGrey.70}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.CoolGrey.40}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.CoolGrey.60}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{color.CoolGrey.40}",
+          "type": "color"
+        }
+      }
+    },
+    "Interaction": {
+      "Default": {
+        "Normal": {
+          "value": "{Brand.90}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Brand.110}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Brand.120}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{Brand.110}",
+          "type": "color"
+        },
+        "Focused": {
+          "value": "{Brand.80}",
+          "type": "color"
+        },
+        "SubtleNormal": {
+          "value": "{Brand.30}",
+          "type": "color"
+        },
+        "SubtleHover": {
+          "value": "{Brand.40}",
+          "type": "color"
+        },
+        "SubtleActive": {
+          "value": "{Brand.60}",
+          "type": "color"
+        },
+        "SubtleSelected": {
+          "value": "{Brand.40}",
+          "type": "color"
+        }
+      },
+      "Neutral": {
+        "Normal": {
+          "value": "{Neutral.100}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Neutral.110}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Neutral.120}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{Neutral.110}",
+          "type": "color"
+        },
+        "SubtleNormal": {
+          "value": "{Neutral.30}",
+          "type": "color"
+        },
+        "SubtleHover": {
+          "value": "{Neutral.40}",
+          "type": "color"
+        },
+        "SubtleActive": {
+          "value": "{Neutral.60}",
+          "type": "color"
+        },
+        "SubtleSelected": {
+          "value": "{Neutral.40}",
+          "type": "color"
+        }
+      },
+      "Alert": {
+        "Normal": {
+          "value": "{Negative.90}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Negative.110}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Negative.120}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{Negative.110}",
+          "type": "color"
+        },
+        "SubtleNormal": {
+          "value": "{Negative.30}",
+          "type": "color"
+        },
+        "SubtleHover": {
+          "value": "{Negative.40}",
+          "type": "color"
+        },
+        "SubtleActive": {
+          "value": "{Negative.60}",
+          "type": "color"
+        },
+        "SubtleSelected": {
+          "value": "{Negative.40}",
+          "type": "color"
+        }
+      },
+      "Ghost": {
+        "Normal": {
+          "value": "{color.WhiteA.0}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{NeutralA.30}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{NeutralA.40}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{NeutralA.30}",
+          "type": "color"
+        },
+        "InvertedHover": {
+          "value": "{color.WhiteA.50}",
+          "type": "color"
+        },
+        "InvertedActive": {
+          "value": "{color.WhiteA.60}",
+          "type": "color"
+        },
+        "InvertedSelected": {
+          "value": "{color.WhiteA.50}",
+          "type": "color"
+        },
+        "DestructiveHover": {
+          "value": "{Negative.30}",
+          "type": "color"
+        },
+        "DestructiveActive": {
+          "value": "{Negative.40}",
+          "type": "color"
+        },
+        "DestructiveSelected": {
+          "value": "{Negative.30}",
+          "type": "color"
+        }
+      },
+      "Disabled": {
+        "Normal": {
+          "value": "{Neutral.70}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{Neutral.80}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{Neutral.90}",
+          "type": "color"
+        },
+        "SubtleNormal": {
+          "value": "{Neutral.40}",
+          "type": "color"
+        },
+        "SubtleHover": {
+          "value": "{Neutral.50}",
+          "type": "color"
+        },
+        "SubtleActive": {
+          "value": "{Neutral.60}",
+          "type": "color"
+        }
+      },
+      "Border": {
+        "Normal": {
+          "value": "{color.Blue.70}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.Blue.80}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.Blue.100}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{color.Blue.90}",
+          "type": "color"
+        },
+        "NeutralNormal": {
+          "value": "{Neutral.60}",
+          "type": "color"
+        },
+        "NeutralHover": {
+          "value": "{Neutral.70}",
+          "type": "color"
+        },
+        "NeutralActive": {
+          "value": "{Neutral.80}",
+          "type": "color"
+        },
+        "NeutralSelected": {
+          "value": "{Neutral.70}",
+          "type": "color"
+        },
+        "Alert": {
+          "value": "{Negative.80}",
+          "type": "color"
+        },
+        "Warning": {
+          "value": "{Warning.80}",
+          "type": "color"
+        }
+      },
+      "Background": {
+        "Modal": {
+          "value": "{color.Background.Default}",
+          "type": "color"
+        },
+        "Modeless": {
+          "value": "{color.Background.Default}",
+          "type": "color"
+        },
+        "InvertedModeless": {
+          "value": "{color.Background.Inverted}",
+          "type": "color"
+        },
+        "FormField": {
+          "value": "{color.Background.Default}",
+          "type": "color"
+        },
+        "DefaultDimmer": {
+          "value": "{NeutralA.90}",
+          "type": "color"
+        }
+      },
+      "SideMenu": {
+        "Background": {
+          "value": "{color.CoolGrey.120}",
+          "type": "color"
+        }
+      },
+      "Inverted": {
+        "Normal": {
+          "value": "{color.WhiteA.130}",
+          "type": "color"
+        },
+        "Hover": {
+          "value": "{color.WhiteA.140}",
+          "type": "color"
+        },
+        "Active": {
+          "value": "{color.WhiteA.120}",
+          "type": "color"
+        },
+        "Selected": {
+          "value": "{color.WhiteA.140}",
+          "type": "color"
+        }
+      },
+      "Focus": {
+        "Default": {
+          "value": "{color.Blue.80}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "paddingXXS": {
+    "value": "{sizeXXS}",
+    "type": "spacing"
+  },
+  "paddingXS": {
+    "value": "{sizeXS}",
+    "type": "spacing"
+  },
+  "paddingSM": {
+    "value": "{sizeSM}",
+    "type": "spacing"
+  },
+  "paddingBase": {
+    "value": "{sizeBase}",
+    "type": "spacing"
+  },
+  "paddingMD": {
+    "value": "{sizeMD}",
+    "type": "spacing"
+  },
+  "paddingLG": {
+    "value": "{sizeLG}",
+    "type": "spacing"
+  },
+  "paddingXL": {
+    "value": "{sizeXL}",
+    "type": "spacing"
+  },
+  "paddingXXL": {
+    "value": "{sizeXXL}",
+    "type": "spacing"
+  },
+  "marginXXS": {
+    "value": "{sizeXXS}",
+    "type": "spacing"
+  },
+  "marginXS": {
+    "value": "{sizeXS}",
+    "type": "spacing"
+  },
+  "marginSM": {
+    "value": "{sizeSM}",
+    "type": "spacing"
+  },
+  "marginBase": {
+    "value": "{sizeBase}",
+    "type": "spacing"
+  },
+  "marginMD": {
+    "value": "{sizeMD}",
+    "type": "spacing"
+  },
+  "marginLG": {
+    "value": "{sizeLG}",
+    "type": "spacing"
+  },
+  "marginXL": {
+    "value": "{sizeXL}",
+    "type": "spacing"
+  },
+  "marginXXL": {
+    "value": "{sizeXXL}",
+    "type": "spacing"
+  },
+  "borderRadiusXS": {
+    "value": "{border-Radius} / 2",
+    "type": "borderRadius"
+  },
+  "borderRadiusSM": {
+    "value": "{border-Radius}",
+    "type": "borderRadius"
+  },
+  "borderRadiusMD": {
+    "value": "{border-Radius} * 1.5",
+    "type": "borderRadius"
+  },
+  "borderRadiusLG": {
+    "value": "{border-Radius} * 2",
+    "type": "borderRadius"
+  },
+  "control-lineWidth": {
+    "value": "{lineWidth}",
+    "type": "borderWidth"
+  },
+  "Disabled": {
+    "value": "50%",
+    "type": "opacity"
+  }
+}

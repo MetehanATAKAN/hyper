@@ -1,0 +1,34 @@
+.column-settings-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100vh - 217px);
+    padding: 0 1.5rem;
+    background-color: #fff;
+    &__pages-section {
+        flex: 1;
+        height: 100%;
+        border-right: 1px solid #0000007c;
+        padding-top: 1rem;
+        .ant-skeleton {
+            margin-top: 1rem;
+        }
+        .MuiToggleButtonGroup-root {
+            overflow-y: auto;
+            height: 600px;
+        }
+        .save-btn {
+            margin-top: 1rem;
+        }
+    }
+    &__column-section {
+        flex: 3;
+        height: 100%;
+        padding: 1.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .column-settings-section {
+        flex-direction: column;
+    }
+}

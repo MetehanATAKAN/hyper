@@ -1,0 +1,20 @@
+//
+// general.scss
+//
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Open Sans', system-ui, 'Helvetica Neue', sans-serif;
+}
+
+// Fix event bubbling on iOS devices
+@supports (-webkit-overflow-scrolling: touch) {
+    body {
+        cursor: pointer;
+    }
+}

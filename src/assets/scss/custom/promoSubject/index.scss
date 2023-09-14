@@ -1,0 +1,198 @@
+.promo-subject-pages {
+
+    .pages {
+        border: 1px solid #DEE2E6;
+
+        .pages-need {
+
+            .pages-header,
+            .pages-datas {
+                border-right: 1px solid #DEE2E6;
+            }
+        }
+
+        .pages-need,
+        .pages-benefit {
+            padding: 0 !important;
+        }
+
+        .pages-header {
+            border-bottom: 1px solid #DEE2E6;
+            height: 80px;
+
+            .pages-header-need {
+                padding: 10px 20px 0 20px;
+            }
+        }
+
+        .pages-datas {
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+
+            .imgContainer {
+                width: auto;
+                height: 218px;
+                margin: auto;
+                transition: none !important;
+
+                &:hover {
+                    box-shadow: none !important;
+                }
+            }
+
+            .border-datas {
+                border: 1px solid #EBEBEB;
+                width: auto;
+                height: 250px;
+                margin: 8px;
+                border-radius: 4px;
+
+                transition: all 0.4s ease 0s !important;
+
+                &:hover {
+                    box-shadow: 0px 0px 5px 2px rgba(163, 172, 186, 0.7) !important;
+                }
+
+                .check {
+                    border-bottom: 1px solid #EBEBEB;
+                }
+            }
+
+            .active {
+                border: 1px solid #0ACF97;
+
+                .check {
+                    border-bottom: 1px solid #0ACF97;
+                }
+            }
+
+
+        }
+    }
+
+    .header {
+        margin-bottom: 24px;
+        .status {
+            margin-top: 20px;
+        }
+        .header-right {
+            transform-style: preserve-3d;
+            margin-top: 17px;
+            .header-right-elements {
+                position: relative;
+                top: 46%;
+                transform: perspective(1px) ;
+                height: 31px;
+                span {
+                        border: 1px solid #DEE2E6;
+                        border-radius: 4px;
+                        height: 31px;
+                        padding: 7px 8.5px;
+                    }
+                button {
+                    border: none;
+                    width: 54px;
+                    height: 31px;
+                    background: #00A0DF;
+                    border-radius: 2px;
+                    color: white;
+                    margin-left: 8px;
+                }
+            }
+        }
+        .header-left {
+            margin-top: 15px;
+            span {
+                font-size: 14.4px;
+                font-weight: 600;
+                color:  #6C757D;
+            }
+        }
+        .single-selects {
+            float: right;
+        }
+    }
+
+  
+    .col {
+        padding: 0 !important;
+    }
+}
+
+.promo-subject {
+    .status-title {
+        color: rgb(255, 255, 255);
+        height: 100%;
+        transform-style: preserve-3d;
+
+        .status-title-name {
+            position: relative;
+            top: 50%;
+            transform: perspective(1px) translateY(-50%);
+            text-align: center;
+        }
+    }
+
+    .table-dropdown{
+        display: flex;
+        justify-content: center;
+        .dropdown-menu-container{
+            position: fixed !important;
+            margin-top: 6px;
+        }
+        .dropdown-toggle{
+            background-color: #fff;
+            border: none;
+            margin: 0;
+            padding: 0;
+            &::after{
+                content: none;
+            }
+        }
+    }
+}
+
+.tooltipx {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltipx .tooltiptextx {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 9999;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltipx .tooltiptextx::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltipx:hover .tooltiptextx {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .MuiTableCell-root {
+    &:has(.status-title) {
+        padding: 0 !important;
+    }
+}

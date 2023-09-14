@@ -1,0 +1,126 @@
+$bg-color: #fafbfe;
+$footer-bg-color: #eef2f7;
+$header-font-weight: 500;
+$font-color: #6c757d;
+$font-size: 0.9rem;
+$label-font-weight: 600;
+// .modal.fade {
+//     z-index: 10000000 !important;
+// }
+#global-new-modal {
+    // z-index: 999999;
+    .Toastify {
+        margin: 0 !important;
+    }
+    .modal-content {
+        position: relative;
+        overflow-y: auto;
+        max-height: calc(100vh - 128px);
+        border-radius: 4px;
+    }
+    .modal-header {
+        background-color: $bg-color;
+        color: $font-color;
+        padding: 16px 24px;
+        font-size: $font-size;
+        font-weight: $header-font-weight;
+        border-bottom: none;
+        h4 {
+            margin: 0;
+            padding: 0;
+            color: $font-color;
+            font-size: $font-size;
+        }
+        border-bottom: 1px solid #dee2e6;
+    }
+    .modal-body {
+        padding: 24px;
+        background-color: $bg-color;
+        > label {
+            color: $font-color;
+            margin-bottom: 4px;
+            font-size: $font-size;
+            font-weight: $label-font-weight;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        > div {
+            color: $font-color;
+            font-size: $font-size;
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            > div {
+                color: $font-color;
+                font-size: $font-size;
+                margin-bottom: 16px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                > label {
+                    color: $font-color;
+                    margin-bottom: 4px;
+                    font-size: $font-size;
+                    font-weight: $label-font-weight;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    width: 100%;
+                }
+            }
+            > span {
+                color: $font-color;
+                font-size: $font-size;
+                margin-bottom: 16px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                > label {
+                    color: $font-color;
+                    margin-bottom: 4px;
+                    font-size: $font-size;
+                    font-weight: $label-font-weight;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            > label {
+                color: $font-color;
+                margin-bottom: 4px;
+                font-size: $font-size;
+                font-weight: $label-font-weight;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        > span {
+            color: $font-color;
+            font-size: $font-size;
+            margin-bottom: 16px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            > label {
+                color: $font-color;
+                margin-bottom: 4px;
+                font-size: $font-size;
+                font-weight: $label-font-weight;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .modal-footer {
+        padding: 16px 24px 16px 16px;
+        background-color: $footer-bg-color;
+    }
+}
+
+.ant-picker-dropdown {
+    z-index: 10000000 !important;
+}

@@ -1,0 +1,122 @@
+.activity-types{
+    input::-webkit-calendar-picker-indicator {
+        display: none!important;
+    }
+    &__container{
+        display: grid;
+        row-gap: .7rem;
+        padding: 1.2rem;
+        position: relative;
+    }
+
+    &__form-container{
+        position: relative;
+        button{
+            position: absolute;
+            top: 0;
+            border: none;
+            background-color: transparent;
+            right: 0;
+            height: 37px;
+            margin-top: 0rem;
+            margin-right: 0rem;
+            border-radius: 0 4px 4px 0;
+            padding: 2px 9px 0 9px;
+            i{
+                font-size: 1.2rem;
+                margin-top: 3px;
+                color: #CCCCCC;
+            }
+        }
+    }
+
+    &__color-modal{
+        background-color: transparent!important;
+        .modal-dialog{
+            margin: 0!important;
+            transform: translate(19%, 20.1%)!important;
+            .modal-content{
+                border: 1px solid rgba($color: #000000, $alpha: 0.2);
+                border-radius: 6px;
+                width: fit-content;
+                .modal-body{
+                    padding: 10px!important;
+                }
+            }
+        }
+    }
+
+    &__color-buttons{
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+        column-gap: 6px;
+        & > button{
+            div{
+                width: 1rem;
+                height: 1rem;
+            }
+            
+            border-radius: 4px;
+            border: 1px solid rgba($color: #000000, $alpha: 0.2);
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .activity-types__color-modal{
+        .modal-dialog{
+            transform: translate(-2%, 13.1%)!important;
+            .modal-content{
+                border: 1px solid rgba($color: #000000, $alpha: 0.1);
+                border-radius: 6px;
+                width: fit-content;
+                .modal-body{
+                    padding: 4px!important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px){
+    .activity-types__color-modal{
+        .modal-dialog{
+            transform: translate(-2%, 9.1%)!important;
+        }
+    }
+}
+
+.activity-types-select-with-color{
+    display: flex;
+    column-gap: .5rem;
+    align-items: center;
+    &__box{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 4px;
+    }
+}
+
+
+
+input::-webkit-calendar-picker-indicator {
+    display: none!important;
+}
+
+.target-operating-searchbox{
+    position: relative;
+    .sc-eCstlR{
+        position: absolute!important;
+        width: 100%!important;
+    }
+    z-index: 99;
+
+    .react-search-box-dropdown{
+        li{
+            z-index: 99;
+        }
+        
+        
+    }
+}

@@ -1,0 +1,17 @@
+#packing-form-table{
+    // .css-1o6p3b3-MuiTableCell-root:nth-child(6), .css-1o6p3b3-MuiTableCell-root:nth-child(11){
+    //     // background-color: #CED4DA !important;
+    // }
+    // .css-xhtqz8-MuiTableCell-root:nth-child(6), .css-xhtqz8-MuiTableCell-root:nth-child(11){
+    //     // background-color: #CED4DA !important;
+    // }
+    .MuiTable-root thead tr th:nth-child(6), .MuiTable-root thead tr th:nth-child(11){
+        border: 0.8px solid #CED4DA !important;
+        border-right: none !important;
+        background-color: #CED4DA !important;
+    }
+    .MuiTable-root tbody td:nth-child(6), .MuiTable-root tbody td:nth-child(11){
+        border-bottom-color: #CED4DA !important;
+        background-color: #CED4DA !important;
+    }
+}

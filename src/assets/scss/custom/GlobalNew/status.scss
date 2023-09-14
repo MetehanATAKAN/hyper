@@ -1,0 +1,44 @@
+
+    .global-status{
+        height: 100%!important;
+        width: 100%!important;
+        
+        &__item{
+            display: flex;
+            align-items:center;
+            width: 100%!important;
+            height: 100%!important;
+            margin: 0;
+            padding: 8px 8px;
+            column-gap: 8px;
+        }
+        &__item-text{
+            font-weight: 500;
+        }
+        &__item-icon{
+            width: 14px;
+            height: 15px;
+            display: grid;
+            place-items: center;
+            svg{
+                width: 14px;
+                height: 15px;
+            }
+        }
+    }
+
+    .MuiTableCell-root {
+        &:has(.global-status) {
+                padding: 0 !important;
+                position: relative;
+                width: 100%!important;
+                height: 100%!important;
+            
+            .global-status__item {
+                width: 100%!important;
+                height: 100%!important;
+                position: absolute;
+                top: 0;
+            }
+        }
+    }

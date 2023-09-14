@@ -1,0 +1,13 @@
+.radios-forms{
+    display: flex;
+    justify-content: space-between;
+}
+.radios{
+    font-size: 13px;
+}
+.used-radios{
+    font-size: 13px;
+    &__label{
+        margin: 0 15px;
+    }
+}

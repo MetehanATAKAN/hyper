@@ -1,0 +1,98 @@
+// 
+// buttons.scss
+//
+
+.btn {
+    .mdi {
+        &:before {
+            line-height: initial;
+        }
+    }
+}
+.btn-rounded {
+    border-radius: 2em;
+}
+//Bootstrap Icon
+.icon{
+    margin-right: 5px
+}
+// Button Shadows
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        @include button-shadow($value);
+    }
+}
+.btn {
+    //color: #FFFFFF;
+    border-radius: 0.15rem;
+}
+.btn-split{
+    background: #D500F9 !important;
+    box-shadow: 0px 2px 6px 0px rgba(255, 140, 245, 0.5);
+    border: none;
+    &:hover{
+        background-color: #b308d1 !important;
+    } 
+}
+.btn-warning{
+    color: #FFFFFF !important;
+}
+.btn-add{
+    color: #fff;
+    border-color: #00A0DF;
+    background: #02A0DF !important;
+    //box-shadow: 0px 2px 6px 0px rgba(0, 160, 223, 50%);
+    border: none;
+    &:hover{
+        background-color: #0088BE !important;
+    }
+}
+// EDİT EVENT PAGE BUTTONS 
+.gap-btn{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+// Split button Color 
+$purple-before: #727cf5;
+$purple-after: #3644eb;
+.btn-purple{
+    background-color: $purple-before;
+    border-color: $purple-before;
+    &:hover{
+        background-color: $purple-after;
+        border-color: $purple-after;
+    }
+}
+//Objection button
+$green-before: #02a8b5;
+$purple-after: #008691;
+.btn-objection{
+    background-color: $green-before;
+    border-color: $green-before;
+    &:hover{
+        background-color: $purple-after;
+        border-color: $purple-after;
+    }
+}
+.competitor-btn-past{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    bottom: -60px;
+    right: 50px;
+}
+// competitor btn
+$pink-before: #ff679b;
+$pink-after: #ff4182;
+.competitor-btn, .competitor-btn-past{
+    background-color: $pink-before;
+    border-color: $pink-before;
+    box-shadow: none;
+    &:hover{
+        background-color: $pink-after;
+        border-color: $pink-after;
+    }
+}
+.competitor-btn-past{
+    right: 108px;
+}

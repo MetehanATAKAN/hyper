@@ -1,0 +1,23 @@
+
+.brochure-general{
+
+
+    .general-process-card{
+        display: flex;
+        padding: $padding-lg * 1px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: $margin-lg * 1px;
+        align-self: stretch;
+
+        border-radius: $border-radius-md * 1px;
+        border: 1px solid $color-border-default;
+        background: $color-background-default;
+    }
+
+    .general-process-card{
+        .custom-input-elements{
+            width: 100%;
+        }
+    }
+}

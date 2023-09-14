@@ -1,0 +1,103 @@
+.visit-content{
+    // .status-title{
+    //     display: flex;
+    //     align-items:center;
+    //     width: 100%;
+    //     // height: 41px!important;
+    //     height: 100%;
+    //     margin: 0;
+    //     padding: 8px 8px;
+    // }
+
+    // .global-filter{
+    //     display: flex;
+    //     padding: 1rem 1.5rem;
+    //     gap: 1rem;
+    //     align-items: center;
+    //     background-color: #F1F3FA;
+
+
+    //     .global-filter-container{
+
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         gap: .8rem;
+    //         align-items: center;
+
+    //         .label-text-field{
+    //             white-space: wrap;
+    //         }
+
+    //         .ant-select-multiple{
+    //             background-color: transparent;
+    //         }
+
+
+    //         .new-dropdown-select .ant-select-selector{
+    //             background-color: #FFFFFF!important;
+    //         }
+    //     }
+
+    //     .global-filter-buttons{
+    //         display: flex;
+    //         align-items: flex-end;
+    //         margin-left: auto;
+    //         column-gap: 3px;
+    //         flex-wrap: nowrap;
+    //         margin-top: auto;
+
+    //         button{
+    //             border: 1px solid #DEE2E6;
+    //             border-radius: 2px;
+    //             background-color: #FFFFFFCC;
+    //             width: 2rem;
+    //             height: 2rem;
+    //             padding: 0;
+    //             display: grid;
+    //             place-items: center;
+
+    //             svg, i{
+    //                 width: 19px!important;
+    //                 height: 19px!important;
+    //                 display: grid;
+    //                 place-items: center;
+    //             }
+    //         }
+
+    //         &__apply{
+    //             svg{
+    //                 color: #0ACF97!important;
+    //             }
+    //         }
+            
+    //         &__delete{
+    //             i{
+    //                 transform: matrix(0.87, -0.5, 0.5, 0.87, 0, 0);
+    //                 color: #FA5C7C;
+    //             }
+    //         }
+
+    //         &__close{
+    //             svg{
+    //                 color: #6C757D;
+    //             }
+    //         }
+
+    //     }
+    // }
+
+    &__table-icons{
+        padding: 0;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        button{
+            border: none;
+            background-color: transparent;
+            padding: 1px;
+            margin: 0;
+        }
+    }
+
+    
+}

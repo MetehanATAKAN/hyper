@@ -1,0 +1,67 @@
+$fontSizeSm: 0.75rem;
+$color: #6C757D;
+.gant-filter-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    .ant-radio-group{
+        width: 160px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .ant-radio-wrapper{
+            font-size: $fontSizeSm;
+            color: $color;
+        }
+        &:nth-child(1){
+            .ant-radio-wrapper:nth-child(1){
+                margin-right: 22px;
+            }
+        }
+    }
+    .gant-filters-buttons{  
+        display: flex;
+        margin-left: auto;
+        padding-top: 8px;
+        column-gap: 4px;
+        flex-wrap: nowrap;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        button{
+            border: 1px solid #DEE2E6;
+            border-radius: 2px;
+            background-color: #FFFFFFCC;
+            width: 2rem;
+            height: 2rem;
+            padding: 0;
+            display: grid;
+            place-items: center;
+
+            svg, i{
+                width: 19px!important;
+                height: 19px!important;
+                display: grid;
+                place-items: center;
+            }
+        }
+
+        &__apply{
+            svg{
+                color: #0ACF97!important;
+            }
+        }
+        
+        &__delete{
+            i{
+                transform: matrix(0.87, -0.5, 0.5, 0.87, 0, 0);
+                color: #FA5C7C;
+            }
+        }
+
+        &__close{
+            svg{
+                color: #6C757D;
+            }
+        }}
+}

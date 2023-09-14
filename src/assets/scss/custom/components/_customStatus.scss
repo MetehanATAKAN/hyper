@@ -1,0 +1,33 @@
+.custom-status {
+    display: flex;
+    width: 185px;
+    height: $table-control-height-cell-sm * 1px;
+    padding: 0px $padding-sm * 1px;
+    align-items: center;
+    gap: $margin-sm * 1px;
+    @include typography-regular-base;
+    &__redact {
+        background-color: $non-semantic-color-background-grey-muted;
+        color: $non-semantic-color-content-grey-primary;
+    }
+    &__send_to_approval {
+        background-color: $non-semantic-color-background-orange-muted;
+        color: $non-semantic-color-content-orange-primary;
+    }
+    &__approval_awaited {
+        background-color: $non-semantic-color-background-orange-muted;
+        color: $non-semantic-color-content-orange-primary;
+    }
+    &__approved {
+        background-color: $non-semantic-color-background-green-muted;
+        color: $non-semantic-color-content-green-primary;
+    }
+    &__translate_awaited {
+        background-color: $non-semantic-color-background-orange-muted;
+        color: $non-semantic-color-content-orange-primary;
+    }
+    &__refactor {
+        background-color: $non-semantic-color-background-raspberry-muted;
+        color: $non-semantic-color-content-raspberry-primary;
+    }
+}

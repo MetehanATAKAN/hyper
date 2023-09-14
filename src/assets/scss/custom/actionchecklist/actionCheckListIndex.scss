@@ -1,0 +1,72 @@
+.action-checklist{
+    &__header{
+        margin: 1.6rem 0 1.6rem 0;
+    }
+
+    // table.Table-table{
+    //     border-collapse: collapse!important;
+    // }
+}
+
+.TableContainer-root > div{
+    table.Table-table{
+        border-collapse: collapse!important;
+    }
+}
+.checklist-main-wiev-checks{
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: .6rem;
+    align-items: center;
+
+    img{
+        width: 1rem;
+        height: 1rem;
+    }
+    input{
+        min-width: 1.12em;
+        min-height: 1.12em;
+        max-width: 1.12em;
+        max-height: 1.12em;
+    }
+    margin-top: .3rem;
+
+    &__button{
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        box-shadow: none;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        column-gap: .4rem;
+        &:hover{
+            background-color: transparent;
+            color: black;
+        }
+        .form-check-input{
+            border: 1px solid rgba($color: #000000, $alpha: .4);
+        }
+    }
+      .tooltip.show {
+    opacity: 1 !important;
+  }
+}
+  
+
+.tooltip.show {
+    opacity: 1 !important;
+  }
+
+
+  #tooltip-top > .tooltip-arrow {
+        border-top: 5px solid #564!important;
+      }
+
+    //   #button-tooltip-2 > .tooltip-arrow{
+    //     border-top: 5px solid #564;
+    //   }

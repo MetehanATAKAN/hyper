@@ -1,0 +1,68 @@
+.custom-badge {
+    display: inline-flex;
+    padding: 0px $padding-base * 1px;
+    align-items: center;
+    border-radius: $border-radius-sm * 1px;
+    @include typography-regular-base;
+    &_grey {
+        background-color: $non-semantic-color-background-grey-muted;
+        color: $non-semantic-color-content-grey-primary;
+    }
+    &_blue {
+        background-color: $non-semantic-color-background-blue-muted;
+        color: $non-semantic-color-content-blue-primary;
+    }
+    &_green {
+        background-color: $non-semantic-color-background-green-muted;
+        color: $non-semantic-color-content-green-primary;
+    }
+    &_red {
+        background-color: $non-semantic-color-background-red-muted;
+        color: $non-semantic-color-content-red-primary;
+    }
+    &_orange {
+        background-color: $non-semantic-color-background-orange-muted;
+        color: $non-semantic-color-content-orange-primary;
+    }
+    &_raspberry {
+        background-color: $non-semantic-color-background-raspberry-muted;
+        color: $non-semantic-color-content-raspberry-primary;
+    }
+    &_magenta {
+        background-color: $non-semantic-color-background-magenta-muted;
+        color: $non-semantic-color-content-magenta-primary;
+    }
+    &_purple {
+        background-color: $non-semantic-color-background-purple-muted;
+        color: $non-semantic-color-content-purple-primary;
+    }
+    &_grape {
+        background-color: $non-semantic-color-background-grape-muted;
+        color: $non-semantic-color-content-grape-primary;
+    }
+    &_violet {
+        background-color: $non-semantic-color-background-violet-muted;
+        color: $non-semantic-color-content-violet-primary;
+    }
+    &_cyan {
+        background-color: $non-semantic-color-background-cyan-muted;
+        color: $non-semantic-color-content-cyan-primary;
+    }
+    &_teal {
+        background-color: $non-semantic-color-background-teal-muted;
+        color: $non-semantic-color-content-teal-primary;
+    }
+    &_aquamarine {
+        background-color: $non-semantic-color-background-aquamarine-muted;
+        color: $non-semantic-color-content-aquamarine-primary;
+    }
+    &_emerald {
+        background-color: $non-semantic-color-background-emerald-muted;
+        color: $non-semantic-color-content-emerald-primary;
+    }
+    &_default {
+        background-color: $non-semantic-color-background-white-strong;
+        color: $non-semantic-color-content-grey-primary;
+        border: 1px solid $non-semantic-color-border-grey-subtle;
+    }
+}

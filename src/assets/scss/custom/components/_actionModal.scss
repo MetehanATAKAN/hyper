@@ -1,0 +1,52 @@
+.action-modal {
+    .modal-content {
+        max-width: 400px;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        .action-modal-body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 48px;
+            &__icon{
+                // margin-top: 50px;
+            }
+            .modal-info, &__title {
+                font-weight: bold;
+                margin-top: 8px;
+                font-size: 1.5rem;
+            }
+            &__question {
+                font-size: 14.4px;
+                margin-top: 8px;
+            }
+
+            &__buttons {
+                margin-top: 48px;
+                button {
+                    border: none;
+                    height: 35px;
+                    border-radius: 2px;
+                    padding: 8px 12px;
+                }
+                .cancel {
+                    margin-left: 8px;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+                .delete{
+                    background-color: #FA5C7C;
+                    &:hover {
+                        background-color: #f51340;
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+    .modal-body {
+        padding: 0 !important;
+    }
+}

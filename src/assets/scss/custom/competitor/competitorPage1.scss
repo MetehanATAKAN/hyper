@@ -1,0 +1,50 @@
+.competitor_main {
+    .competitor_header {
+        .row {
+            margin-left: 1px;
+        }
+    }
+    .competitor_body {
+        table {
+            text-align: left;
+            tbody {
+                tr {
+                    height: 31px;
+                    width: 260px;
+                    cursor: pointer;
+                    :nth-child(1){
+                        width: 120px;
+                    }
+                    :nth-child(2){
+                        width: 150px;
+                    }
+                    :nth-child(3){
+                        width: 100px;
+                    }
+                    .competitor_date {
+                        width: 100px;
+                    }
+                    .future_date {
+                        background-color: #CEF5EA !important;
+                    }
+                    .now_date {
+                        background-color: #FFF4D4 !important;
+                    }
+                    .past_date {
+                        background-color: #FEDEE5 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+/*------------------ MODAL BACKDROP --------------------------*/
+.modal-backdrop { display: none;} 
+.modal {background: rgba(0, 0, 0, 0.5);}
+
+@media (min-width: 576px){
+    .competitor-index-modal{
+        max-width: 670px;
+        margin: 1.75rem auto;
+    }
+}

@@ -1,0 +1,136 @@
+$color-yellow: #ffe200;
+$color-thumb: #fafbfe;
+$color-track-bg: #ced4da;
+$text-color: rgb(128,128,128);
+$bg-header: #f1f3fa;
+$blue-color: #04a1df;
+$red-color: #fa5c7c;
+.comp-tabs{
+    .nav-link.active {
+        color: #04a1df;
+      }
+}
+#acordion-container{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 400px;
+    width: 100%;
+}
+.acordion-item{
+    .accordion-button {
+        font-weight: 700;
+        background-color: #fff !important;
+        &:focus{
+            box-shadow: none;
+
+        }
+        &:not(.collapsed){
+            color: $text-color;
+            background-color: #f1f3fa !important;
+        }
+      }
+      .accordion-header{
+          margin-top: 0;
+      }
+}
+#competitor-page3-table-container{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 400px;
+    width: 100%;
+    border: .5px solid rgb(197, 189, 189);
+    border-radius: 2px;
+    .disadvantages-container{
+        height: 45px;
+        border-radius: 2px;
+        .disadvantages-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $bg-header;
+            height: 45px;
+            border-bottom: 1px solid rgb(197, 189, 189);
+    
+            &-title{
+                padding: 10px;
+                color: #000;
+                font-size: 1.1rem;
+            }
+        }
+        .disadvantages-btn{
+            margin: 0;
+            padding: 0;
+            border: none;
+            box-shadow: none;
+            width: 45px;
+            height: 44px;
+            font-size: 1.3rem;
+            background-color: $bg-header;
+            color: $blue-color;
+        }
+        .check-icon{
+            background-color: $blue-color;
+            color: #fff;
+            font-size: 1rem;
+            width: 40px;
+            height: 44px;
+            border-radius: 0;
+        }
+    }
+    .disadvantages-content{
+        display: flex;
+        border-bottom: 1px solid rgb(197, 189, 189);
+        justify-content: space-between;
+        height: 45px;
+        .disadvantages-content-name{
+            padding: 5px;
+            color: #4c5358;
+            font-size: 13px;
+        }
+        .disadvanteges-delete-btn{
+            margin: 0;
+            padding: 0;
+            border: none;
+            box-shadow: none;
+            width: 45px;
+            height: 35px;
+            font-size: 1.3rem;
+            background-color: #fff;
+            color: $red-color;
+            font-size: 1rem;
+            &:hover{
+                background-color: #fff;
+                color: $red-color;
+            }
+        }
+    }
+    .spanInp {
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      
+    .add-disadv-input {
+        transform: translateX(100%);
+        opacity: 0;
+        transition: opacity .25s, transform .25s;
+        height: 40px;
+        width: 240px;
+        &:focus{
+            border: 0;
+        }
+      }
+    .show-disadv-input {
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+.disadvantage-checkbox{
+    margin-right: 10px;
+    font-size: 25px;
+}
+@media only screen and (max-width: 500px) {
+        .spanInp{
+            width: 144px;
+        }
+}

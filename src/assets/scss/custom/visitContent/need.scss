@@ -1,0 +1,192 @@
+.visit-content-need-add {
+
+    &__file-upload {
+
+        label{
+            color: #ADB5BD!important;
+            font-size: 14.4px!important;
+            background-color: #FAFBFE!important;
+            font-weight: 400!important;
+        }
+
+        .ant-upload-select {
+            width: 100%;
+            height: 100%;
+
+            button{
+                background-color: #EEF2F7;
+            }
+
+            .ant-upload {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: max-content 1fr;
+
+                button {
+                    width: fit-content;
+                    border-radius: 4px 0 0 4px;
+                }
+
+                label {
+                    border: 1px solid #DEE2E6;
+                    border-left: none;
+                    border-radius: 0 4px 4px 0;
+                    text-indent: .5rem;
+                    vertical-align: middle;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+        }
+    }
+
+    &__file-upload {
+        width: 100%;
+        height: auto !important;
+
+        .ant-upload-list-text {
+            display: none;
+        }
+
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: max-content 1fr;
+
+
+
+
+        button {
+            width: fit-content;
+            border-radius: 4px 0 0 4px;
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            border: 1px solid #DEE2E6;
+            border-left: none;
+            border-radius: 0 4px 4px 0;
+            text-indent: .5rem;
+            vertical-align: middle;
+            display: block;
+            align-items: center;
+            position: relative;
+            white-space: nowrap;
+            padding-right: 1.5rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding-top: 4px;
+
+            span {
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                padding: 0 8px;
+                cursor: pointer;
+
+                svg {
+                    width: 15px;
+                    height: 15px;
+                    color: red;
+                }
+            }
+        }
+
+        .ant-upload-select-text{
+            background-color: #EEF2F7;
+            .ant-btn{
+                color: #6C757D;
+            }
+        }
+
+    }
+
+
+    &__files-container{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FAFBFE;
+        padding: 8px;
+        border-left: 1px solid #DEE2E6;
+        border-right: 1px solid #DEE2E6;
+        border-bottom: 1px solid #DEE2E6;
+        &:first-child{
+            border-top: 1px solid #DEE2E6;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        &:last-child{
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+    }
+
+    &__files-item{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 4px;
+    }
+
+    &__files-item-icon, &__files-item-delete, &__files-item-download{
+        svg{
+            width: 1rem!important;
+            height: 1rem!important;
+        }
+    }
+    &__files-item-name{
+        font-size: 12px;
+        color: #00A0DF;
+        text-decoration: underline;
+        padding-top: 2px;
+        padding-bottom: auto;
+    }
+    &__files-item-delete{
+        color: #FA5C7C;
+        cursor: pointer;
+    }
+}
+
+.wrapper-class {
+    padding: 0;
+    border: 1px solid #d9d9d9;
+  }
+  .editor-class {
+    background-color:#fff;
+    padding: 4px;
+    // border: 1px solid #d9d9d9;
+
+    height: 14rem;
+    max-height: 14rem;
+    overflow: auto!important;
+    width: 100%;
+  }
+  .toolbar-class {
+    border: 1px solid #d9d9d9;
+    margin-bottom: 0;
+  }
+
+  .rdw-dropdown-selectedtext{
+    span{
+        text-overflow: ellipsis;
+
+        white-space: nowrap;
+        overflow: hidden;
+        margin-right: 1rem;
+    }
+  }
+
+
+  .rdw-embedded-modal, .rdw-link-modal{
+    height: auto!important;
+  }

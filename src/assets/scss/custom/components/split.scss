@@ -1,0 +1,278 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pharmacy_buttons_left {
+    display: flex;
+
+    button {
+        background-color: red;
+        margin-right: 10px;
+        border: none;
+        width: 50px;
+        border-radius: 5px;
+
+        i {
+            color: #FFFFFF;
+        }
+    }
+
+    .pharmacy_buttons_save {
+        background-color: #0ACF97;
+    }
+
+    .pharmacy_buttons_back {
+        background-color: #727CF5;
+    }
+
+    .pharmacy_buttons_reset {
+        background-color: #FA5C7E;
+    }
+}
+
+.add-pharmacy {
+    .add-pharmacy-buttons {
+        :nth-child(2) {
+            text-align: end;
+        }
+
+        // .pharmacy_buttons_left {
+        //     display: flex;
+        //     button {
+        //         background-color: red;
+        //         margin-right: 10px;
+        //         border: none;
+        //         width: 50px;
+        //         border-radius: 5px;
+        //         i {
+        //             color: #FFFFFF;
+        //         }
+        //     }
+        //     .pharmacy_buttons_save{
+        //         background-color: #0ACF97;
+        //     }
+        //     .pharmacy_buttons_back{
+        //         background-color: #727CF5;
+        //         i {
+        //             margin-right: 12px;
+        //         }
+        //     }
+        //     .pharmacy_buttons_reset{
+        //         background-color: #FA5C7E;
+        //     }
+        // }
+    }
+
+    .pharmacy_table {
+        max-height: 300px;
+        overflow-y: scroll;
+
+        table {
+            tr {
+                height: 31px !important;
+            }
+
+            thead {
+                th {
+                    padding: 5px 0 5px 0;
+                }
+
+                // :nth-child(3) {
+                //     background-color: green;
+                // }
+            }
+
+            tbody {
+                tr {
+                    .pharmacy_name {
+                        &:hover {
+                            background-color: #FFF4D4;
+                        }
+
+                        div {
+                            text-align: start;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .percentSuccess {
+            font-size: 15px;
+            color: white;
+            background-color: #0ACF97;
+        }
+
+        .percentDanger {
+            font-size: 15px;
+            color: white;
+            background-color: red;
+        }
+
+        .pharmacy_split_collapse {
+            position: absolute;
+            width: 459px;
+            left: 16px;
+            background-color: black;
+            opacity: .3;
+            top: 142px;
+        }
+
+        .bg {
+            width: 95%;
+            height: 75%;
+            position: absolute;
+            background: rgba(0, 0, 0, .5);
+            left: 15px;
+        }
+
+        .pharmacy_split_select {
+            position: absolute;
+            left: 15px;
+            top: 57px;
+            width: 95%;
+            z-index: 9999;
+            background: white;
+            height: 50%;
+            border: 1px solid #02A0DF;
+        }
+        .react-select__control {
+            margin: 0 26px 0 26px;
+        }
+        .react-select {
+            margin-top: 15px !important;
+        }
+    }
+
+    // .pharmacy_percent {
+    //     .percentSuccess {
+    //         font-size: 15px;
+    //         color: white;
+    //         background-color:rgb(25, 199, 25) ;
+    //     }
+    //     .percentDanger {
+    //         font-size: 15px;
+    //         color: white;
+    //         background-color: red;
+    //     }
+    // }
+}
+
+.add_pharmacy_headers {
+    color: #343A40;
+    font-weight: 600;
+}
+
+.form-control-add-pharmacy {
+    width: 85%;
+    margin: 5px 0 5px 0;
+    border-radius: 5px;
+    border: none !important;
+    border: 1px solid #F1F3FA !important;
+    text-align: center;
+
+    &:focus {
+        border: none;
+    }
+}
+
+.physician-split-header {
+    :nth-child(2) {
+        .btn-outline-dark {
+            margin-right: 4px;
+        }
+    }
+
+    .split-header {
+        margin-bottom: 20px;
+
+        .physician-split-pharmacy-name {
+            margin-top: 10px;
+        }
+
+        :nth-child(2) {
+            .btn {
+                border-radius: 5px;
+            }
+
+            .btn-outline-success {
+                margin-left: 6px;
+            }
+
+            .btn-outline-dark {
+                margin-left: 6px;
+            }
+
+            .btn-outline-danger {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.physician-split-table {
+    max-height: 400px;
+    overflow: auto;
+    thead {
+        background-color: #EFF2F7;
+
+        tr {
+            :nth-child(1) {
+                text-align: start;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            :nth-child(1) {
+                text-align: start;
+                padding-left: 10px;
+            }
+
+            :nth-child(3) {
+                .row {
+                    div {
+                        text-align: center;
+                        margin-top: 12px;
+                        padding-left: 1px;
+                    }
+
+                    i {
+                        font-size: 8px;
+                        margin-left: 5px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+
+            :nth-child(4) {
+                input {
+                    text-align: center;
+                    padding-right: 10px;
+                    background-color: #F8F9FA;
+                }
+            }
+
+            :nth-child(6) {
+                .row {
+                    div {
+                        text-align: center;
+                        margin-top: 12px;
+                        padding-left: 1px;
+                    }
+
+                    i {
+                        font-size: 8px;
+                        margin-left: 5px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

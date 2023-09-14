@@ -1,0 +1,23 @@
+.previous {
+    .previous_radio{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        label {
+            margin-left: 10px;
+            color: #6C757D;
+            font-weight: 200;
+        }
+    }
+    .lord_input {
+        margin: 0 1px 0 1px;
+        input {
+            height: 40px;
+            background-color: #EFF2F7;
+            border: none;
+            border: 1px solid #E3E6EB;
+            border-radius: 5px;
+            margin-bottom: 8px;
+        } 
+    }
+}

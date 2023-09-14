@@ -1,0 +1,176 @@
+.filter-select-container {
+    padding-left: 10px;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.filter-select-btn {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding-right: 12px;
+
+    :first-child {
+        margin-right: 8px;
+    }
+}
+
+.filter-select {
+    padding: 0;
+
+    .dropdown-container {
+        border-radius: 30px !important;
+    }
+
+    .dropdown-heading {
+        background-color: #fff;
+        border-radius: 30px !important;
+    }
+}
+/* PAGE LİST */
+.filter-table-select-container{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .budget-switch{
+        display: inherit;
+    }
+    .filter-table-select{
+        padding: 0;
+        margin-right: 8px;
+        width: 127px;
+        .dropdown-container{
+            border-radius: 30px !important;
+            &:focus-within {
+                border: none !important;
+                box-shadow: none !important;
+            }
+        }
+        .dropdown-heading{
+            background-color: #fff;
+            border-radius: 30px !important;
+            height: 27px !important;
+        }
+        .multi-select{
+            .dropdown-heading-value{
+                font-size: 14px !important;
+            }
+        }
+    }
+    .dropdown-content {
+        width: auto !important;
+    }
+    .filter-select-buttons{
+        align-self: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 10px;
+        .page-list-icons{
+            width: 35px !important;
+            height: 27px !important;
+            padding: 4px 8px;
+            cursor: pointer;
+            border: 1px solid  #DEE2E6;
+        }
+    }
+}
+
+.rmsc {
+    margin-bottom: 16px;
+    .dropdown-container {
+        border: none !important;
+    }
+    .dropdown-heading {
+        background-color: #FAFBFE;
+        border: 1px solid #DEE2E6 !important;
+        path {
+            color: #98a6ad ;
+        }
+    }
+    .dropdown-content {
+        z-index: 3;
+    }
+}
+
+.page-filters {
+    .multi-select-auto {
+        .rmsc {
+            width: auto;
+            border: none;
+            outline: none;
+            margin-right: 10px;
+            .dropdown-container {
+                border: none !important;
+                width: auto;
+                outline: none;
+                &:focus-within {
+                    border: none !important;
+                    box-shadow: none !important;
+                }
+            }
+            .dropdown-heading {
+            width: auto;
+            border: 1px solid #DEE2E6 !important;
+            border-radius: 20px !important;
+            outline: none;
+            background: #FFFFFF;
+            height: 27px;
+            .dropdown-heading-value {
+                width: auto;
+            }
+            }
+            .dropdown-content {
+                width: 360px !important;
+            }
+        }
+    
+        .rmsc * {
+            color: #6C757D;
+        }
+
+        .react-select {
+            height: 27px;
+            width: 165px;
+            margin-right: 10px;
+            .react-select__control {
+                    width: auto;
+                    border: 1px solid #DEE2E6 !important;
+                    border-radius: 20px !important;
+                    outline: none;
+                    height: 27px !important;
+                    min-height: auto !important;
+                    background-color: #FFFFFF !important;
+                }
+                .react-select__placeholder {
+                    top: 35% !important;
+                }
+                .react-select__indicator {
+                    padding-top: 0 !important;
+                }
+                .react-select__control--menu-is-open {
+                    height: 27px !important;
+                }
+        }
+    }
+    .buttons {
+        text-align: end;
+        button {
+            background-color: transparent;
+    border: 1px solid rgba(108, 117, 125, 0.3);
+    border-radius: 2px;
+    margin-left: 0.8rem;
+}
+        svg {
+            // margin-left: 12px;
+            // border: 1px solid rgba(108, 117, 125, 0.3);
+            // border-radius: 2px;
+            width: 1.3rem !important;
+            height: 1.3rem !important;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.work-place-table{
+    table, th, td {
+        border: 1px solid rgba(224, 224, 224, 1)!important;
+        border-collapse: collapse!important;
+    }
+    table{
+        width: 100%!important;
+    }
+    td, th {
+        padding: 6px!important;
+    }
+    th{
+        background-color: #E7E9EB!important;
+    }
+
+    &__checkbox{
+        text-align: center;
+    }
+}

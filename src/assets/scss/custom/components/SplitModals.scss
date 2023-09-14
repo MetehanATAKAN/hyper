@@ -1,0 +1,300 @@
+.split-error-modal{
+    .modal-dialog{
+        display: grid;
+        place-items: center;
+    }
+    .modal-content{
+        // max-width: 24.99rem;
+        width: 20rem;
+        border-radius: 10px;
+        border: none;
+
+        animation-name: fadeInUpBig;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    .modal-body{
+        padding: 48px 48px 0 48px;
+        // max-width: fit-content;
+    }
+
+    &__button-container{
+        display: flex;
+        column-gap: 8px;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    &__message{
+        text-align: center;
+        color: #6C757D;
+        font-size: .75rem;
+        margin-top: 16px;
+    }
+
+    &__footer{
+        padding: 0;
+        margin-top: 16px;
+        margin-bottom: 48px;
+        button{
+            border: none;
+            padding: 8px 12px;
+            border-radius: 3px;
+            font-size: .70rem;
+        }
+        .split-not-save-btn{
+            background-color: #FA5C7C;
+            color: #fff;
+            &:hover{
+                background-color: #D54E69;
+            }
+        }
+        .split-back-btn, .split-cancel-btn{
+            background-color: #EEF2F7;
+            color: #000;
+        }
+        .split-delete-btn{
+            background-color: #D54E69;
+            color: #fff;
+        }
+        .split-save-btn{
+            background-color: #0ACF97;
+            &:hover{
+                background-color: #09B080;
+            }
+            i{
+                color: #fff;
+            }
+        }
+    }
+
+    .competitors-tutukon-name{
+        text-transform: uppercase;
+        color: #FA5C7C;
+        font-weight: 500;
+    }
+    .competitors-tutukon-disadvantages-name{
+        color: #FA5C7C;
+        font-weight: 500;
+    }
+
+    .modal-close-animation{
+        animation-name: closeFadeInUpBig;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    
+}
+
+.split-close-button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    cursor: pointer;
+    i{
+        font-size: 1.2rem;
+        color: #6C757D;
+    }
+}
+
+.split-error-modal__icon {
+    margin: 0 48px 0 48px;
+    i {
+        font-size: 96px;
+        color: #FA5C7C;
+    }
+
+    div {
+        color: #FA5C7C;
+        margin-top: 8px;
+        font-weight: 700;
+        font-size: .9rem;
+    }
+}
+.split-error-modal__icon-save {
+    margin: 0 48px 0 48px;
+    i {
+        font-size: 96px;
+        color: #00a0df;
+    }
+
+    div {
+        color: #00a0df;
+        margin-top: 8px;
+        font-weight: 700;
+        font-size: .9rem;
+    }
+}
+
+//success modal
+
+.split-success-modal{
+    
+    .modal-dialog{
+        display: grid;
+        place-items: center;
+    }
+    .modal-content{
+        width: fit-content;
+        border-radius: 10px;
+        border: none;
+        animation-name: fadeInUpBig;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    .modal-body{
+        padding: 48px 48px 0 48px;
+        width: 18rem;
+    }
+    .modal-close-animation{
+        animation-name: closeFadeInUpBig;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+}
+
+  @-webkit-keyframes fadeInUpBig {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(0, -2000px, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none
+    }
+  }
+  @keyframes fadeInUpBig {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(0, -2000px, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none
+    }
+  }
+
+  @-webkit-keyframes closeFadeInUpBig {
+    0% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(0, -2000px, 0);
+    }
+  }
+  @keyframes closeFadeInUpBig {
+    0% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -2000px, 0);
+      transform: translate3d(0, -2000px, 0);
+    }
+  }
+
+// Report not Saved Modal
+.report-not-saved{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 9999;
+    &__container{
+        position: relative;
+        display: grid;
+        place-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .report-information-icon{
+            font-size: 4rem;
+            color: #FA5C7C;
+        }
+        .report-information-text{
+            font-size: 1.6rem;
+            color: #fff;
+        }
+    }
+    .report-not-saved__content{
+        display: grid;
+        place-items: center;
+        row-gap: 1rem;
+        animation: tada 1.5s alternate;
+    }
+}
+
+
+@keyframes tada{
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+    
+      10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+      }
+    
+      30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      }
+    
+      40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      }
+    
+      100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+}
+
+@media screen and (max-width: 768px) {
+    .report-not-saved{
+        &__container{
+            .report-information-icon{
+                font-size: 3rem;
+            }
+            .report-information-text{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.pharmacyButtons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

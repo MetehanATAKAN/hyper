@@ -1,0 +1,114 @@
+// ERROR
+
+.global-error-icon{
+    color: #f27474;
+    font-size: 110px;
+    animation: animate-error-icon .8s;
+    animation: shake-error-icon 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+}
+
+.global-modal-button{
+  background-color: #7066e0;
+  
+}
+
+.global-error-modal .modal-content{
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@keyframes animate-error-icon{
+    0%{
+        transform: rotateX(100deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotateX(0);
+        opacity: 1;
+    }
+}
+@keyframes shake-error-icon{
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+}
+
+// SUCCESS
+
+.global-success-icon{
+  color: #6acc6a;
+  font-size: 6rem;
+  border: 6px solid #6acc6a;
+  border-radius: 50%;
+  padding: 5px;
+  animation: animate-success-icon .8s;
+}
+
+.global-success-modal .modal-content{
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@keyframes animate-success-icon{
+  0%{
+      transform: scale(1.7);
+  }
+  50%{
+      transform: scale(.7);
+  }
+  100%{
+      transform: scale(1);
+  }
+}
+
+
+// INFORMATION
+
+.global-information-icon{
+  color: #87adbd;
+  font-size: 82px;
+  animation: animate-information-icon 2s;
+  margin-top: 11px;
+}
+.global-information-circle{
+  position: absolute;
+  border-radius: 50%;
+  border: 7px solid #87adbd;
+  color: transparent;
+  font-size: 104px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.global-information-modal .modal-content{
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@keyframes animate-information-icon{
+  0%{
+      transform: rotateY(-360deg);
+  }
+  100%{
+      transform: rotateY(0);
+  }
+}

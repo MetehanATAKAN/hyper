@@ -1,0 +1,6 @@
+export const SubProcessTypes = {
+    SAVE :'SAVE',
+    SAVED_BUTTON_CHANGE:'SAVED_BUTTON_CHANGE',
+    SUB_PROCESS_NAME:'SUB_PROCESS_NAME',
+    LEFT_BAR_KEY:'LEFT_BAR_KEY'
+}

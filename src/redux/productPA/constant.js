@@ -1,0 +1,5 @@
+export const ProductPATypes = {
+    SELECT_QUARTER  : 'SELECT_QUARTER',
+    FILTERS : 'FILTERS',
+    SELECT_FILTER_NAME  :   'SELECT_FILTER_NAME' 
+}

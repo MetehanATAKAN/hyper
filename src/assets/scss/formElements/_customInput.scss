@@ -1,0 +1,168 @@
+.custom-input {
+    border-radius: $border-radius-sm * 1px !important;
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+    input {
+        &::placeholder {
+            text-indent: -10px !important;
+        }
+    }
+}
+
+.custom-input-elements {
+    .label {
+        margin-bottom: $margin-xxs * 1px important;
+        .label-required {
+            color: $color-content-negative-secondary !important;
+            margin-right: $margin-xxs * 1px !important;
+        }
+        .label-name {
+            font-size: $font-size-base * 1px !important;
+            font-weight: 400 !important;
+            color: $color-content-primary !important;
+            width: auto !important;
+        }
+
+        .label-help {
+            margin-left: $margin-xxs * 1px ;;
+            svg {
+                width:  $font-size-lg * 1px;
+                height: $font-size-lg * 1px;
+                color: $color-action-outline-active;
+            }
+        }
+    }
+
+    input , textarea {
+        &::placeholder {
+            padding: 0 !important;
+        }
+    }
+}
+
+//custom-input and input-success
+.custom-input-default,.custom-input-success{
+    &:hover  {
+        border-color: $brand-110 !important;
+    }
+}
+.custom-input-default-focus-true,.custom-input-success-focus-true {
+    box-shadow: 0px 0px 0px 3px rgba(103, 146, 244, 0.50) !important;
+    border-color: $brand-110 !important;
+}
+
+//error
+.custom-input-error {
+    border-color: $color-red-80 !important;
+    svg {
+        color: $color-content-negative-secondary !important;
+    }
+}
+.custom-input-error-focus-true {
+    box-shadow: 0px 0px 0px 3px rgba(242, 100, 100, 0.50) !important;
+}
+
+//warning
+.custom-input-warning {
+    border-color: $color-orange-80 !important;
+    svg {
+        color: $color-interaction-border-warning !important;
+    }
+}
+.custom-input-warning-focus-true {
+    box-shadow: 0px 0px 0px 3px rgba(246, 163, 81, 0.50)  !important;
+}
+
+//success 
+.custom-input-success {
+    svg {
+        color: $positive-90 !important;
+    }
+}
+
+
+
+
+
+//disbled-input
+.custom-input-disabled-true {
+    border: 1px solid $color-cool-grey-60 !important;
+    svg {
+        opacity: 0.5;
+    }
+}
+
+/*---------------------------Textarea----------------------------------- */
+.custom-textarea {
+    border: 1px solid $color-border-neutral-subtle !important;
+    border-radius: $border-radius-md * 1px !important;
+    &:hover {
+        border-color: $color-interaction-border-active !important;
+    }
+}
+.custom-textarea-focus-true {
+    box-shadow: 0px 0px 0px 3px rgba(103, 146, 244, 0.50) !important;
+    border-color: $color-interaction-border-active !important;
+}
+.custom-textarea-disabled {
+    &:hover {
+        border-color: $color-border-neutral-subtle !important;
+    }
+}
+
+/*---------------------------Password----------------------------------- */
+.custom-password {
+    border: 1px solid $color-cool-grey-60 !important;
+    border-radius: $border-radius-md * 1px !important;
+    &:hover {
+        border-color: $color-interaction-border-active !important;
+    }
+}
+.custom-password-focus {
+    box-shadow: 0px 0px 0px 3px rgba(103, 146, 244, 0.50) !important;
+    border-color: $color-interaction-border-active !important;
+}
+.custom-password-disabled{
+    &:hover {
+        border-color: $color-cool-grey-60 !important;
+    }
+}
+/*---------------------------Searh----------------------------------- */
+.custom-search {
+    
+    .ant-input-group-addon {
+        background-color: $color-cool-grey-30 !important;
+        button {
+            background-color: $color-blue-90 !important;
+        }
+    }
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/*---------------------------input color----------------------------------- */
+.custom-input-color {
+    border-radius: $border-radius-md * 1px 0 0 $border-radius-md * 1px !important ;
+}
+.custom-input-color-button {
+    .ant-btn-icon-only  {
+        border-radius: 0  $border-radius-md * 1px  $border-radius-md * 1px 0 !important ;
+        &:hover  {
+            border-color: $brand-110 !important;
+        }
+        i {
+            &:hover {
+                color: $brand-110 !important;
+            }
+        }
+    }
+}
+
+/*---------------------------input number----------------------------------- */
+.custom-input-number {
+    width: 100% !important;
+}

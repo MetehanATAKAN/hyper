@@ -1,0 +1,17 @@
+.custom-alert{
+    .ant-alert{
+        padding: $padding-xs * 1px $padding-base * 1px;
+        border-radius: $border-radius-lg * 1px;
+
+        .ant-alert-content{
+            font-family: $font-family;
+        }
+    }
+}
+
+.custom-alert-default{
+    .ant-alert{
+        background-color: $color-background-neutral-subtle;
+        border: 1px solid $color-border-neutral-subtle;
+    }
+}

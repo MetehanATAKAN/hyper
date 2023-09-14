@@ -1,0 +1,44 @@
+$active-bg-color: #fff;
+$inactive-bg-color: #F1F3FA;
+$font-weight: 600;
+$font-size: .9rem;
+$font-color: #6C757D;
+$disable-font-color: #dee2e6;
+.new-tab-nav{
+    margin-left: 24px;
+    margin-right: 24px;
+    .ant-tabs-nav{
+        margin-bottom: 0 !important;
+    }
+    .ant-tabs-nav-list{
+        height: 35px !important;
+    }
+    .ant-tabs-tab{
+        font-weight: $font-weight !important;
+        font-size: $font-size;
+        color: $font-color !important;
+        background-color: $inactive-bg-color !important;
+        border: none !important;
+    }
+    .ant-tabs-tab-btn{
+        color: $font-color !important;
+    }
+    .ant-tabs-tab-active{
+        background-color: $active-bg-color !important;
+        border-top-left-radius: 4px !important;
+        border-top-right-radius: 4px !important;
+    
+    }
+    .ant-tabs-tab-disabled{
+        .ant-tabs-tab-btn{
+            color: $disable-font-color !important;
+        }
+    }
+}
+.new-btn-divider{
+    border-left : 1px solid #dee2e693 !important;
+    height: 100% !important;
+}
+:fullscreen {
+    background-color: #F1F3FA;
+  }

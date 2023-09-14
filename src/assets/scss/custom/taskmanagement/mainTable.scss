@@ -1,0 +1,319 @@
+
+.task-management-tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .task-management-tabs-button{
+        border: none;
+        background-color: #00A0DF;
+        display: grid;
+        place-items: center;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 4px;
+        i{
+            font-size: 1.3rem;
+            color: #fff;
+        }
+    }
+
+    .task-management-tabs-container{
+        display: flex;
+        flex-direction: row;
+
+        .task-management-tabs-item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: .5rem;
+            padding: 5px 7px;
+            border: none;
+            background-color: transparent;
+            white-space: nowrap;
+            color: rgb(150, 144, 144);
+            img{
+                width: 16px;
+                height: auto;
+            }
+        }
+    }
+}
+
+// .task-management-table{
+//     margin-top: 1rem;
+//     &__headers{
+//         display: grid;
+//         // grid-template-columns: repeat(5, 1fr);
+//         border: 1px solid #000;
+//         & > div{
+//             display: flex;
+//             flex-direction: row;
+//             align-items: center;
+//             justify-content: space-between;
+//             border-right: 1px solid #000;
+//             padding: .5rem;
+//         }
+//     }
+// }
+// .task-management-table-row{
+//     display: grid;
+//     grid-template-columns: repeat(5, 1fr);
+//     border: 1px solid #000;
+//     & > div{
+//         border-right: 1px solid #000;
+//     }
+// }
+
+.task-management-table{
+    margin-top: .3rem;
+    &__headers{
+        display: grid;
+        font-weight: 600;
+        background-color: rgba(0, 0, 255, 0.1);
+        border: 1px solid #cccc;
+        & > div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-right: 1px solid #cccc;
+            padding: .5rem;
+
+            button{
+                background-color: transparent;
+                border: none;
+            }
+
+            &:last-of-type{
+                border-right: none;
+            }
+        }
+    }
+
+    &__container{
+        display: grid;
+        //grid-template-columns: repeat(5, 1fr);
+        border: 1px solid #cccc;
+        & > div{
+            border-right: 1px solid #cccc;
+        }
+        .task-management-table-column{
+            &:nth-child(1){
+                font-size: .7rem !important;
+                font-weight: 700;
+                white-space: nowrap;
+            }
+
+            height: fit-content;
+            .task-management-table-row{
+                // padding: .88rem 7px 1.02rem 12px;
+                height: 2.6rem;
+                // font-size: .7rem;
+                border-bottom: 1px solid #cccc;
+
+                .task-management-activity-background-purple{
+                    background-color: rgba(0, 0, 255, 0.1);
+                    padding: 5px 6px;
+                    border-radius: 14px;
+                }
+                .task-management-activity-background-green{
+                    background-color: rgba(0, 128, 0, 0.2);
+                    padding: 5px 6px;
+                    border-radius: 14px;
+                }
+                .task-management-activity-background{
+                    padding: 3px 6px;
+                    border-radius: 14px;
+                }
+            }
+            .task-management-table-row{
+                    padding: 1.1rem 7px .80rem 12px;
+                    display: flex;
+                    align-items: center;
+                .task-management-activity-background-purple{
+                    background-color: rgba(0, 0, 255, 0.1);
+                    padding: 3px 6px;
+                    border-radius: 14px;
+                }
+                .task-management-activity-background-green{
+                    background-color: rgba(0, 128, 0, 0.2);
+                    padding: 3px 6px;
+                    border-radius: 14px;
+                }
+            }
+        }
+    }
+}
+
+.management-tab-active{
+
+    border-bottom: 4px solid #00A0DF!important;
+}
+
+.task-management-container-activity, .task-management-header-activity{
+    grid-template-columns: repeat(1, 1fr);
+}
+.task-management-container-job, .task-management-header-job{
+    grid-template-columns: 16% 1fr;
+}
+.task-management-container-business, .task-management-header-business{
+    grid-template-columns: 16% 16% 1fr;
+}
+.task-management-container-parent, .task-management-header-parent{
+    grid-template-columns: 16% 16% 16% 1fr;
+}
+.task-management-container-sub, .task-management-header-sub{
+    grid-template-columns: 16% 16% 16% 16% 1fr;
+}
+
+.task-management-table-column{
+    &__icons{
+        display: flex;
+        justify-content: baseline;
+        button{
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            i{
+                font-size: 1.1rem;
+            }
+            .fa-trash-can{
+                color: rgba(255, 0, 0, 0.7);
+            }
+            .task-management-table-column__icons-deleted-false{
+                color: rgba(255, 0, 0, 0.3);
+            }
+            .fa-pencil{
+                color: #6c757d;
+            }
+        }
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+        column-gap: .4rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .task-management-tabs-container{
+        font-size: .8rem;
+    }
+    .task-management-tabs-button{
+        i{
+            font-size: 1rem!important;
+        }
+    }
+    .task-management-table__headers{
+        div{
+            span{
+                font-size: .8rem;
+            }
+        }
+    }
+    .task-management-table-column{
+        font-size: .8rem;
+        &:nth-child(1){
+            span{
+                font-size: .6rem !important;
+            }
+            
+        }
+        .fa-pencil, .fa-trash-can{
+            font-size: .9rem;
+        }
+    }
+    .task-management-table-row{
+        padding-left: 6px!important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .task-management-tabs-container{
+        font-size: .6rem;
+        .task-management-tabs-item{
+            img{
+                width: 10px;
+                height: auto;
+            }
+        }
+    }
+    .task-management-tabs-button{
+        i{
+            font-size: .6rem!important;
+        }
+    }
+    .task-management-table__headers{
+        div{
+            span{
+                font-size: .6rem;
+            }
+            i{
+                font-size: .8rem;
+            }
+        }
+    }
+    .task-management-table-column{
+        font-size: .6rem;
+        &:nth-child(1){
+            span{
+                font-size: .45rem !important;
+            }
+            
+        }
+        .fa-pencil, .fa-trash-can{
+            font-size: .8rem;
+        }
+        .task-management-table-row{
+            padding-left: 2px!important;
+        }
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    .task-management-tabs-container{
+        font-size: .5rem;
+        .task-management-tabs-item{
+            img{
+                width: 5px;
+                height: auto;
+            }
+        }
+    }
+    .task-management-tabs-button{
+        i{
+            font-size: .4rem!important;
+        }
+    }
+    .task-management-table__headers{
+        div{
+            span{
+                font-size: .45rem;
+            }
+            i{
+                font-size: .6rem;
+            }
+        }
+    }
+    .task-management-table-column{
+        font-size: .5rem;
+        &:nth-child(1){
+            span{
+                font-size: .4rem !important;
+            }
+            
+        }
+        .fa-pencil, .fa-trash-can{
+            font-size: .6rem;
+        }
+        text-align: center;
+        .task-management-table-row{
+            padding-left: 0px!important;
+            text-align: center;
+            text-justify: center;
+        }
+    }
+}

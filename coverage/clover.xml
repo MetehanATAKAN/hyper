@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1656486685661" clover="3.2.0">
+  <project timestamp="1656486685661" name="All files">
+    <metrics statements="26" coveredstatements="12" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="3" elements="37" coveredelements="15" complexity="0" loc="26" ncloc="26" packages="1" files="1" classes="1"/>
+    <file name="BusinessProcess.js" path="C:\Users\tunca\Desktop\ditenfronted\hyper\src\pages\apps\TaskManagement\BusinessProcess.js">
+      <metrics statements="26" coveredstatements="12" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="3"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="12" count="2" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="21" count="2" type="stmt"/>
+      <line num="22" count="2" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="26" count="0" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="39" count="0" type="stmt"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="42" count="0" type="stmt"/>
+      <line num="46" count="0" type="stmt"/>
+      <line num="49" count="2" type="stmt"/>
+      <line num="50" count="0" type="stmt"/>
+      <line num="52" count="2" type="stmt"/>
+      <line num="53" count="0" type="stmt"/>
+      <line num="56" count="2" type="stmt"/>
+      <line num="68" count="4" type="stmt"/>
+      <line num="84" count="4" type="stmt"/>
+      <line num="103" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>

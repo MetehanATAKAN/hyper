@@ -1,0 +1,138 @@
+// PRIMARY BUTTTON
+.custom-button.ant-btn-primary {
+    @include button-by-type-css-basic(primary);
+}
+.custom-button.ant-btn-primary.ant-btn-sm {
+    @include button-by-type-css-basic(primary, sm);
+}
+.custom-button.ant-btn-primary.ant-btn-lg {
+    @include button-by-type-css-basic(primary, lg);
+}
+
+// DEFAULT BUTTON
+.custom-button.ant-btn-default {
+    @include button-by-type-css-basic(default);
+}
+.custom-button.ant-btn-default.ant-btn-sm {
+    @include button-by-type-css-basic(default, sm);
+}
+.custom-button.ant-btn-default.ant-btn-lg {
+    @include button-by-type-css-basic(default, lg);
+}
+
+// TEXT BUTTON
+.custom-button.ant-btn-text {
+    @include button-by-type-css-basic(text);
+}
+.custom-button.ant-btn-text.ant-btn-sm {
+    @include button-by-type-css-basic(text, sm);
+}
+.custom-button.ant-btn-text.ant-btn-lg {
+    @include button-by-type-css-basic(text, lg);
+}
+
+// LINK BUTTON
+.custom-button.ant-btn-link {
+    @include button-by-type-css-basic(link);
+}
+
+.custom-button.ant-btn-link.ant-btn-sm {
+    @include button-by-type-css-basic(link, sm);
+}
+.custom-button.ant-btn-link.ant-btn-lg {
+    @include button-by-type-css-basic(link, lg);
+}
+
+// -------- DANGER BUTTON ---------
+
+//PRIMARY BUTTTON
+.custom-button.ant-btn-primary.ant-btn-dangerous {
+    @include button-by-type-css-danger(primary);
+}
+.custom-button.ant-btn-primary.ant-btn-sm.ant-btn-dangerous {
+    @include button-by-type-css-danger(primary, sm);
+}
+.custom-button.ant-btn-primary.ant-btn-lg.ant-btn-dangerous {
+    @include button-by-type-css-danger(primary, lg);
+}
+
+// DEFAULT BUTTON
+.custom-button.ant-btn-default.ant-btn-dangerous {
+    @include button-by-type-css-danger(default);
+}
+.custom-button.ant-btn-default.ant-btn-sm.ant-btn-dangerous {
+    @include button-by-type-css-danger(default, sm);
+}
+.custom-button.ant-btn-default.ant-btn-lg.ant-btn-dangerous {
+    @include button-by-type-css-danger(default, lg);
+}
+
+// TEXT BUTTON
+.custom-button.ant-btn-text.ant-btn-dangerous {
+    @include button-by-type-css-danger(text);
+}
+.custom-button.ant-btn-text.ant-btn-sm.ant-btn-dangerous {
+    @include button-by-type-css-danger(text, sm);
+}
+.custom-button.ant-btn-text.ant-btn-lg.ant-btn-dangerous {
+    @include button-by-type-css-danger(text, lg);
+}
+
+// LINK BUTTON
+.custom-button.ant-btn-link.ant-btn-dangerous {
+    @include button-by-type-css-danger(link);
+}
+
+.custom-button.ant-btn-link.ant-btn-sm.ant-btn-dangerous {
+    @include button-by-type-css-danger(link, sm);
+}
+.custom-button.ant-btn-link.ant-btn-lg.ant-btn-dangerous {
+    @include button-by-type-css-danger(link, lg);
+}
+
+// -------- DANGER BUTTON ---------
+
+//PRIMARY BUTTTON
+.custom-button-success.ant-btn-primary {
+    @include button-by-type-css-success(primary);
+}
+.custom-button-success.ant-btn-primary.ant-btn-sm {
+    @include button-by-type-css-success(primary, sm);
+}
+.custom-button-success.ant-btn-primary.ant-btn-lg {
+    @include button-by-type-css-success(primary, lg);
+}
+
+// DEFAULT BUTTON
+.custom-button-success.ant-btn-default {
+    @include button-by-type-css-success(default);
+}
+.custom-button-success.ant-btn-default.ant-btn-sm {
+    @include button-by-type-css-success(default, sm);
+}
+.custom-button-success.ant-btn-default.ant-btn-lg {
+    @include button-by-type-css-success(default, lg);
+}
+
+// TEXT BUTTON
+.custom-button-success.ant-btn-text {
+    @include button-by-type-css-success(text);
+}
+.custom-button-success.ant-btn-text.ant-btn-sm {
+    @include button-by-type-css-success(text, sm);
+}
+.custom-button-success.ant-btn-text.ant-btn-lg {
+    @include button-by-type-css-success(text, lg);
+}
+
+// LINK BUTTON
+.custom-button-success.ant-btn-link {
+    @include button-by-type-css-success(link);
+}
+
+.custom-button-success.ant-btn-link.ant-btn-sm {
+    @include button-by-type-css-success(link, sm);
+}
+.custom-button-success.ant-btn-link.ant-btn-lg {
+    @include button-by-type-css-success(link, lg);
+}

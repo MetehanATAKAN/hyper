@@ -1,0 +1,96 @@
+@mixin font-families($weight, $size, $xs: false) {
+    font-family: $font-family;
+    font-weight: $weight;
+    @if ($xs == true) {
+        line-height: $size + 6 * 1px;
+    } @else {
+        line-height: $size + 8 * 1px;
+    }
+    font-size: $size * 1px;
+}
+// SM
+@mixin typography-strong-xs {
+    @include font-families($font-weights-semi-bold, $font-size-xs, true);
+}
+@mixin typography-strong-sm {
+    @include font-families($font-weights-semi-bold, $font-size-sm, false);
+}
+@mixin typography-strong-base {
+    @include font-families($font-weights-semi-bold, $font-size-base, false);
+}
+@mixin typography-strong-lg {
+    @include font-families($font-weights-semi-bold, $font-size-lg, false);
+}
+@mixin typography-strong-h5 {
+    @include font-families($font-weights-semi-bold, $font-size-h5, false);
+}
+@mixin typography-strong-h4 {
+    @include font-families($font-weights-semi-bold, $font-size-h4, false);
+}
+@mixin typography-strong-h3 {
+    @include font-families($font-weights-semi-bold, $font-size-h3, false);
+}
+@mixin typography-strong-h2 {
+    @include font-families($font-weights-semi-bold, $font-size-h2, false);
+}
+@mixin typography-strong-h1 {
+    @include font-families($font-weights-semi-bold, $font-size-h1, false);
+}
+
+// M
+@mixin typography-medium-xs {
+    @include font-families($font-weights-medium, $font-size-xs, true);
+}
+@mixin typography-medium-sm {
+    @include font-families($font-weights-medium, $font-size-sm, false);
+}
+@mixin typography-medium-base {
+    @include font-families($font-weights-medium, $font-size-base, false);
+}
+@mixin typography-medium-lg {
+    @include font-families($font-weights-medium, $font-size-lg, false);
+}
+@mixin typography-medium-h5 {
+    @include font-families($font-weights-medium, $font-size-h5, false);
+}
+@mixin typography-medium-h4 {
+    @include font-families($font-weights-medium, $font-size-h4, false);
+}
+@mixin typography-medium-h3 {
+    @include font-families($font-weights-medium, $font-size-h3, false);
+}
+@mixin typography-medium-h2 {
+    @include font-families($font-weights-medium, $font-size-h2, false);
+}
+@mixin typography-medium-h1 {
+    @include font-families($font-weights-medium, $font-size-h1, false);
+}
+
+// REGULAR
+@mixin typography-regular-xs {
+    @include font-families($font-weights-regular, $font-size-xs, true);
+}
+@mixin typography-regular-sm {
+    @include font-families($font-weights-regular, $font-size-sm, false);
+}
+@mixin typography-regular-base {
+    @include font-families($font-weights-regular, $font-size-base, false);
+}
+@mixin typography-regular-lg {
+    @include font-families($font-weights-regular, $font-size-lg, false);
+}
+@mixin typography-regular-h5 {
+    @include font-families($font-weights-regular, $font-size-h5, false);
+}
+@mixin typography-regular-h4 {
+    @include font-families($font-weights-regular, $font-size-h4, false);
+}
+@mixin typography-regular-h3 {
+    @include font-families($font-weights-regular, $font-size-h3, false);
+}
+@mixin typography-regular-h2 {
+    @include font-families($font-weights-regular, $font-size-h2, false);
+}
+@mixin typography-regular-h1 {
+    @include font-families($font-weights-regular, $font-size-h1, false);
+}

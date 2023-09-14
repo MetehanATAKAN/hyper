@@ -1,0 +1,457 @@
+{
+  "Brand": {
+    "10": {
+      "value": "{color.Blue.10}",
+      "type": "color"
+    },
+    "20": {
+      "value": "{color.Blue.20}",
+      "type": "color"
+    },
+    "30": {
+      "value": "{color.Blue.30}",
+      "type": "color"
+    },
+    "40": {
+      "value": "{color.Blue.40}",
+      "type": "color"
+    },
+    "50": {
+      "value": "{color.Blue.50}",
+      "type": "color"
+    },
+    "60": {
+      "value": "{color.Blue.60}",
+      "type": "color"
+    },
+    "70": {
+      "value": "{color.Blue.70}",
+      "type": "color"
+    },
+    "80": {
+      "value": "{color.Blue.80}",
+      "type": "color"
+    },
+    "90": {
+      "value": "{color.Blue.90}",
+      "type": "color"
+    },
+    "100": {
+      "value": "{color.Blue.100}",
+      "type": "color"
+    },
+    "110": {
+      "value": "{color.Blue.110}",
+      "type": "color"
+    },
+    "120": {
+      "value": "{color.Blue.120}",
+      "type": "color"
+    },
+    "130": {
+      "value": "{color.Blue.130}",
+      "type": "color"
+    }
+  },
+  "Neutral": {
+    "10": {
+      "value": "{color.CoolGrey.10}",
+      "type": "color"
+    },
+    "20": {
+      "value": "{color.CoolGrey.20}",
+      "type": "color"
+    },
+    "30": {
+      "value": "{color.CoolGrey.30}",
+      "type": "color"
+    },
+    "40": {
+      "value": "{color.CoolGrey.40}",
+      "type": "color"
+    },
+    "50": {
+      "value": "{color.CoolGrey.50}",
+      "type": "color"
+    },
+    "60": {
+      "value": "{color.CoolGrey.60}",
+      "type": "color"
+    },
+    "70": {
+      "value": "{color.CoolGrey.70}",
+      "type": "color"
+    },
+    "80": {
+      "value": "{color.CoolGrey.80}",
+      "type": "color"
+    },
+    "90": {
+      "value": "{color.CoolGrey.90}",
+      "type": "color"
+    },
+    "100": {
+      "value": "{color.CoolGrey.100}",
+      "type": "color"
+    },
+    "110": {
+      "value": "{color.CoolGrey.110}",
+      "type": "color"
+    },
+    "120": {
+      "value": "{color.CoolGrey.120}",
+      "type": "color"
+    },
+    "130": {
+      "value": "{color.CoolGrey.130}",
+      "type": "color"
+    }
+  },
+  "NeutralA": {
+    "10": {
+      "value": "{color.CoolGreyA.10}",
+      "type": "color"
+    },
+    "20": {
+      "value": "{color.CoolGreyA.20}",
+      "type": "color"
+    },
+    "30": {
+      "value": "{color.CoolGreyA.30}",
+      "type": "color"
+    },
+    "40": {
+      "value": "{color.CoolGreyA.40}",
+      "type": "color"
+    },
+    "50": {
+      "value": "{color.CoolGreyA.50}",
+      "type": "color"
+    },
+    "60": {
+      "value": "{color.CoolGreyA.60}",
+      "type": "color"
+    },
+    "70": {
+      "value": "{color.CoolGreyA.70}",
+      "type": "color"
+    },
+    "80": {
+      "value": "{color.CoolGreyA.80}",
+      "type": "color"
+    },
+    "90": {
+      "value": "{color.CoolGreyA.90}",
+      "type": "color"
+    },
+    "100": {
+      "value": "{color.CoolGreyA.100}",
+      "type": "color"
+    },
+    "110": {
+      "value": "{color.CoolGreyA.110}",
+      "type": "color"
+    },
+    "120": {
+      "value": "{color.CoolGreyA.120}",
+      "type": "color"
+    },
+    "130": {
+      "value": "{color.CoolGreyA.130}",
+      "type": "color"
+    }
+  },
+  "Informative": {
+    "10": {
+      "value": "{color.Blue.10}",
+      "type": "color"
+    },
+    "20": {
+      "value": "{color.Blue.20}",
+      "type": "color"
+    },
+    "30": {
+      "value": "{color.Blue.30}",
+      "type": "color"
+    },
+    "40": {
+      "value": "{color.Blue.40}",
+      "type": "color"
+    },
+    "50": {
+      "value": "{color.Blue.50}",
+      "type": "color"
+    },
+    "60": {
+      "value": "{color.Blue.60}",
+      "type": "color"
+    },
+    "70": {
+      "value": "{color.Blue.70}",
+      "type": "color"
+    },
+    "80": {
+      "value": "{color.Blue.80}",
+      "type": "color"
+    },
+    "90": {
+      "value": "{color.Blue.90}",
+      "type": "color"
+    },
+    "100": {
+      "value": "{color.Blue.100}",
+      "type": "color"
+    },
+    "110": {
+      "value": "{color.Blue.110}",
+      "type": "color"
+    },
+    "120": {
+      "value": "{color.Blue.120}",
+      "type": "color"
+    },
+    "130": {
+      "value": "{color.Blue.130}",
+      "type": "color"
+    }
+  },
+  "Positive": {
+    "10": {
+      "value": "{color.Green.10}",
+      "type": "color"
+    },
+    "20": {
+      "value": "{color.Green.20}",
+      "type": "color"
+    },
+    "30": {
+      "value": "{color.Green.30}",
+      "type": "color"
+    },
+    "40": {
+      "value": "{color.Green.40}",
+      "type": "color"
+    },
+    "50": {
+      "value": "{color.Green.50}",
+      "type": "color"
+    },
+    "60": {
+      "value": "{color.Green.60}",
+      "type": "color"
+    },
+    "70": {
+      "value": "{color.Green.70}",
+      "type": "color"
+    },
+    "80": {
+      "value": "{color.Green.80}",
+      "type": "color"
+    },
+    "90": {
+      "value": "{color.Green.90}",
+      "type": "color"
+    },
+    "100": {
+      "value": "{color.Green.100}",
+      "type": "color"
+    },
+    "110": {
+      "value": "{color.Green.110}",
+      "type": "color"
+    },
+    "120": {
+      "value": "{color.Green.120}",
+      "type": "color"
+    },
+    "130": {
+      "value": "{color.Green.130}",
+      "type": "color"
+    }
+  },
+  "Warning": {
+    "10": {
+      "value": "{color.Orange.10}",
+      "type": "color"
+    },
+    "20": {
+      "value": "{color.Orange.20}",
+      "type": "color"
+    },
+    "30": {
+      "value": "{color.Orange.30}",
+      "type": "color"
+    },
+    "40": {
+      "value": "{color.Orange.40}",
+      "type": "color"
+    },
+    "50": {
+      "value": "{color.Orange.50}",
+      "type": "color"
+    },
+    "60": {
+      "value": "{color.Orange.60}",
+      "type": "color"
+    },
+    "70": {
+      "value": "{color.Orange.70}",
+      "type": "color"
+    },
+    "80": {
+      "value": "{color.Orange.80}",
+      "type": "color"
+    },
+    "90": {
+      "value": "{color.Orange.90}",
+      "type": "color"
+    },
+    "100": {
+      "value": "{color.Orange.100}",
+      "type": "color"
+    },
+    "110": {
+      "value": "{color.Orange.110}",
+      "type": "color"
+    },
+    "120": {
+      "value": "{color.Orange.120}",
+      "type": "color"
+    },
+    "130": {
+      "value": "{color.Orange.130}",
+      "type": "color"
+    }
+  },
+  "Negative": {
+    "10": {
+      "value": "{color.Red.10}",
+      "type": "color"
+    },
+    "20": {
+      "value": "{color.Red.20}",
+      "type": "color"
+    },
+    "30": {
+      "value": "{color.Red.30}",
+      "type": "color"
+    },
+    "40": {
+      "value": "{color.Red.40}",
+      "type": "color"
+    },
+    "50": {
+      "value": "{color.Red.50}",
+      "type": "color"
+    },
+    "60": {
+      "value": "{color.Red.60}",
+      "type": "color"
+    },
+    "70": {
+      "value": "{color.Red.70}",
+      "type": "color"
+    },
+    "80": {
+      "value": "{color.Red.80}",
+      "type": "color"
+    },
+    "90": {
+      "value": "{color.Red.90}",
+      "type": "color"
+    },
+    "100": {
+      "value": "{color.Red.100}",
+      "type": "color"
+    },
+    "110": {
+      "value": "{color.Red.110}",
+      "type": "color"
+    },
+    "120": {
+      "value": "{color.Red.120}",
+      "type": "color"
+    },
+    "130": {
+      "value": "{color.Red.130}",
+      "type": "color"
+    }
+  },
+  "sizeXXS": {
+    "value": "$size-unit * ($size-step - 3)",
+    "type": "sizing"
+  },
+  "sizeXS": {
+    "value": "$size-unit * ($size-step - 2)",
+    "type": "sizing"
+  },
+  "sizeSM": {
+    "value": "$size-unit * ($size-step - 1)",
+    "type": "sizing"
+  },
+  "sizeBase": {
+    "value": "{size-unit} * {size-step}",
+    "type": "sizing"
+  },
+  "sizeMD": {
+    "value": "$size-unit * ($size-step + 1)",
+    "type": "sizing"
+  },
+  "sizeLG": {
+    "value": "$size-unit * ($size-step + 2)",
+    "type": "sizing"
+  },
+  "sizeXL": {
+    "value": "$size-unit * ($size-step + 4)",
+    "type": "sizing"
+  },
+  "sizeXXL": {
+    "value": "$size-unit * ($size-step + 8)",
+    "type": "sizing"
+  },
+  "control-heightSM": {
+    "value": "24",
+    "type": "sizing",
+    "description": "The height of the basic controls such as buttons and input boxes"
+  },
+  "control-height": {
+    "value": "32",
+    "type": "sizing",
+    "description": "The height of the basic controls such as buttons and input boxes"
+  },
+  "control-heightLG": {
+    "value": "40",
+    "type": "sizing",
+    "description": "The height of the basic controls such as buttons and input boxes"
+  },
+  "Table": {
+    "controlHeightCellSM": {
+      "value": "38",
+      "type": "sizing"
+    },
+    "controlHeightCellMD": {
+      "value": "54",
+      "type": "sizing"
+    },
+    "controlHeightCellLG": {
+      "value": "70",
+      "type": "sizing"
+    }
+  },
+  "SidePanel": {
+    "controlHeight": {
+      "value": "70",
+      "type": "sizing"
+    },
+    "controlWidth": {
+      "value": "260",
+      "type": "sizing"
+    }
+  },
+  "Flow": {
+    "controlWidth": {
+      "value": "225",
+      "type": "sizing"
+    }
+  }
+}

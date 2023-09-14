@@ -1,0 +1,10 @@
+// Background lighten
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color}-lighten {
+      @include bg-variant-light($value);
+  }
+}
+.bg-secondary {
+  background-color: #727cf5 !important;
+}

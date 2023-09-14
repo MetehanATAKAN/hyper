@@ -1,0 +1,256 @@
+$color-blue: #04a1df;
+$color-grey: rgb(128,128,128);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@keyframes slide-bottom {
+    0% {
+      transform: translate(-125px,-75px);
+    }
+    100% {
+      transform: translate(-125px,-25px);
+    }
+  }
+.competitor-modal{
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    border: 1px solid $color-blue;
+    max-width: 300px;
+    width: 100%;
+}
+.competitor-page2-header{
+    color: $color-grey;
+    font-weight: 600;
+    margin-bottom: 10px;
+    &_brand{
+        color: $color-blue;
+        background-color: #ccecf9;
+        width: auto;
+        border-radius: 5px;
+        padding: 4px;
+        font-weight: 500;
+    }
+    .brannd{
+        width: auto;
+    }
+}
+
+#competitor-page2-table{
+    color: $color-grey;
+    thead { 
+        tr th{
+        padding: 5px 5px 5px 15px;
+        line-height: 1.9rem;
+        }
+        tr:first-child th:last-child{
+           .add-cmp{
+                border: none;
+                background-color: transparent;
+                font-size: 1.33rem;
+                margin: 0;
+                padding: 0;
+                color: $color-blue;
+                transition: .1s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            width: 32px;
+            padding-left: 5px;
+        }
+        tr:last-child{
+            background-color: $color-blue;
+            color: #fff;
+            th:nth-child(n+2){
+                width: 60px;
+            }
+            .dangerPercent{
+                background-color: #fa5c7c;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td:first-child{
+            color: #000;
+            padding-left: 15px;
+            text-align: left;
+            }
+            td:nth-child(n+2){
+                width: 55px;
+            }
+            td:last-child{
+                background-color: #fff;
+                color: #fa5c7c;
+                transition: .15s;
+                cursor: pointer;
+                &:hover{
+                transform: scale(1.2);
+                }
+                .delete-cmp{
+                    border: none;
+                    background-color: transparent;
+                    margin: 0;
+                    padding: 0;
+                    color: #fa5c7c;
+                }
+            }
+        } 
+    }
+}
+
+
+.error-500{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  &__title{
+    font-family: 'Poppins', sans-serif;
+
+  }
+    span{
+        color: $color-blue;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    h1{
+      font-size: 64px;
+      color: $color-blue;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      text-shadow: #04a1df3b 5px 1px, #04a1df3b 10px 3px;
+      
+    }
+    &__btn{
+      margin-bottom: 25px;
+    }
+    .gears{
+        display: inline-block;
+      }
+      .gears:first-child{
+        margin-right: 3%;
+      }
+      .gears-container{
+          width:150px; 
+          height: 100px;
+          font-size:24px;
+          padding: 18%;
+          position: relative; 
+          margin: 0px auto;
+      }
+      .gear-rotate{
+        width: 2em;
+        height: 2em;
+        left: 58%; 
+        background: #000;
+        position: absolute;
+        border-radius: 1em;
+        -webkit-animation: 1s gear-rotate linear infinite;
+        -moz-animation: 1s gear-rotate linear infinite;
+        animation: 1s gear-rotate linear infinite;
+    }
+    .gear-rotate-left{
+        width: 2em;
+        height: 2em;
+        background: #000;
+        position: absolute;
+        border-radius: 1em;
+      -webkit-animation: 1s gear-rotate-left linear infinite;
+      -moz-animation: 1s gear-rotate-left linear infinite;
+      animation: 1s gear-rotate-left linear infinite;
+    }
+    
+    .gear-rotate::before, .gear-rotate-left::before {
+        width: 2.8em;
+        height: 2.8em;
+        background: 
+        -webkit-linear-gradient(0deg,transparent 39%,#000 39%,#000 61%, transparent 61%),
+        -webkit-linear-gradient(60deg,transparent 42%,#000 42%,#000 58%, transparent 58%),
+        -webkit-linear-gradient(120deg,transparent 42%,#000 42%,#000 58%, transparent 58%);
+        background: 
+        -moz-linear-gradient(0deg,transparent 39%,#000 39%,#47EC19 61%, transparent 61%),
+        -moz-linear-gradient(60deg,transparent 42%,#000 42%,#000 58%, transparent 58%),
+        -moz-linear-gradient(120deg,transparent 42%,#000 42%,#000 58%, transparent 58%);
+        background: 
+        -o-linear-gradient(0deg,transparent 39%,#000 39%,#000 61%, transparent 61%),
+        -o-linear-gradient(60deg,transparent 42%,#000 42%,#000 58%, transparent 58%),
+        -o-linear-gradient(120deg,transparent 42%,#47EC19 42%,#000 58%, transparent 58%);
+        background: -ms-linear-gradient(0deg,transparent 39%,#000 39%,#000 61%, transparent 61%),-ms-linear-gradient(60deg,transparent 42%,#000 42%,#000 58%, transparent 58%),-ms-linear-gradient(120deg,transparent 42%,#000 42%,#000 58%, transparent 58%);
+        background: 
+          linear-gradient(0deg,transparent 39%,#000 39%,#000 61%, transparent 61%),
+        linear-gradient(60deg,transparent 42%,#000 42%,#000 58%, transparent 58%),
+        linear-gradient(120deg,transparent 42%,#000 42%,#000 58%, transparent 58%);
+        position: absolute;
+        content:"";
+        top: -.4em;
+        left: -.4em;
+        border-radius:1.4em;
+    }
+    .gear-rotate::after, .gear-rotate-left::after {
+        width: 1em;
+        height: 1em;
+        background: #fff;
+        position: absolute;
+        content:"";
+        top: .5em;
+        left: .5em;
+        border-radius: .5em;
+    }
+    
+    /*
+     * Keyframe Animations 
+     */ 
+    
+    @-webkit-keyframes gear-rotate {
+      0% { 
+        -webkit-transform: rotate(0deg);
+      }
+      100% { 
+        -webkit-transform: rotate(-180deg); 
+      }
+    }
+    
+    @-moz-keyframes gear-rotate {
+      0% { 
+        transform: rotate(0deg);
+      }
+      100% { 
+        transform: rotate(-180deg); 
+      }
+    }
+    
+    @keyframes gear-rotate {
+      0% { 
+        transform: rotate(0deg); 
+      }
+      100% { 
+        transform: rotate(-180deg); 
+      }
+    }
+    
+    @-webkit-keyframes gear-rotate-left {
+     0% {
+       -webkit-transform: rotate(30deg); 
+      }
+      100% {
+        -webkit-transform: rotate(210deg);
+      }
+    }
+    
+    @-moz-keyframes gear-rotate-left {
+     0% { 
+       -webkit-transform: rotate(30deg); 
+      }
+      100% { 
+        -webkit-transform: rotate(210deg);
+      }
+    }
+    
+    @keyframes gear-rotate-left {
+     0% { 
+       -webkit-transform: rotate(30deg); 
+      }
+      100% { 
+        -webkit-transform: rotate(210deg);
+      }
+    }
+}

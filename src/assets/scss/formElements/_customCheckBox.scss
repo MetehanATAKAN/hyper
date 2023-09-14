@@ -1,0 +1,26 @@
+$base-check-color: $color-interaction-default-normal ;
+
+.ant-checkbox-wrapper {
+    &:hover{
+        .ant-checkbox-inner {
+            border-color: $base-check-color !important;
+        }
+    }
+}
+.ant-checkbox-wrapper-checked  {
+    &:hover{
+        .ant-checkbox-inner {
+            border-color: $base-check-color !important;
+        }
+    }
+}
+.ant-checkbox-checked {
+    .ant-checkbox-inner {
+        border-radius: $border-radius * 1px;
+        background-color: $base-check-color !important;
+        border-color: $base-check-color !important;
+        &:focus  {
+            border-color: $base-check-color !important;
+        }
+    }
+}

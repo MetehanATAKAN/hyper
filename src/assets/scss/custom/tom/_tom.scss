@@ -1,0 +1,116 @@
+
+.ant-dropdown-trigger.tom-tables-action-color{
+    
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        display: inline-block;
+    
+    svg{
+        width: $font-size-base * 1px;
+        height: $font-size-base * 1px;
+        color: $color-content-secondary;
+    }
+}
+
+
+    .recurrency-radio-input{
+        .custom-input-elements{
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            column-gap: $margin-base * 1px;
+        }
+
+        .custom-input-elements{
+            align-self: baseline;
+            height: 22px;
+            position: absolute;
+            margin-left: 116px;
+            margin-top: 5px;
+        }
+    }
+
+    .recurrency-radio-input-weekly{
+        .custom-input-elements{
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            column-gap: $margin-base * 1px;
+        }
+
+        .custom-input-elements{
+            align-self: baseline;
+            height: 22px;
+            position: absolute;
+            margin-left: 116px;
+        }
+    }
+
+    .recurrency-radio-input-yearly{
+        display: flex;
+        .custom-input-elements{
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            column-gap: $margin-base * 1px;
+        }
+
+        .custom-input-elements{
+   
+            height: 22px;
+        }
+    }
+
+    .recurrency-weekly-buttons{
+        display: flex;
+        align-items: center;
+        column-gap: $margin-xxs * 1px;
+        button{
+            width: 32px;
+            padding: $padding-xs * 1px;
+        }
+    }
+
+    .recurrency-radio-input-monthly{
+        .custom-input-elements{
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            column-gap: $margin-base * 1px;
+        }
+    }
+
+   .recurernce-label{
+    font-family: $font-family;
+   }
+
+   .recurrence-custom-select{
+    .single-selects{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        column-gap: $margin-base * 1px;
+
+        .ant-select{
+            width: 227px;
+        }
+    }
+    
+   }
+
+.recurrency-weekly-buttons-true{
+        span{
+            color: $color-blue-120!important;
+        }
+        background-color: $color-blue-60!important;
+    
+}
+
+.recurrency-quarterly-buttons-true{
+    span{
+        color: $color-blue-120!important;
+    }
+    background-color: $color-blue-60!important;
+
+}

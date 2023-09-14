@@ -1,0 +1,176 @@
+.number_of_patient{
+    .total_number {
+        input {
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            border: 1px solid #E3E6EA;
+            height: 35px;
+            color: #6C757D;
+        }
+        .col-4{
+            input{
+                background-color: #EFF2F7;
+                text-align: center;
+                color: #6C757D;
+            }
+        }
+        div{
+            color: #6C757D;
+            font-weight: 500;
+            font-size: 13.6px;
+        }
+    }
+    // .product_profile {
+    //     max-height: 300px;
+    //     overflow-y: scroll;
+    //     .col,.col-1,.col-2 {
+           
+    //         height: 35px;
+    //         text-align: center;
+    //         padding: 5px;
+    //     }
+    //     .col-1{
+    //         background-color: #02A0DF;
+    //         color: white;
+    //     }
+    //     .row {
+    //         background-color: #EFF2F7;
+    //         margin: 0 1px 20px 1px;
+    //         border: 1px solid #E3E6EA;
+    //         border-radius: 5px;
+    //         .profil {
+    //             border-top: 1px solid #E3E6EA;
+    //             padding: 5px;
+    //         }
+    //     }
+    //     input {
+    //         width: 100%;
+    //         border-radius: 5px;
+    //         border: none;
+    //         height: 100%;
+    //         text-align: center;
+    //     }
+    //     .percent {
+    //         padding: 0;
+    //     }
+    // }
+}
+
+
+
+.product_profile{
+    
+    overflow-y: scroll;
+    overflow-anchor: auto;
+    max-height: 300px;
+    .profile-static-denem{
+        position: fixed;
+        width: calc(100% - 32.8px);
+        // top: 0;
+        // background-color: #EFF2F7;
+        // z-index: 1;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .product_profile-tabs{
+        position: relative;
+        width: inherit;
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 0;
+        width: calc(100% - 18px);
+
+        .product_profile-tabs-item{
+            position: relative;
+            height: 40px;
+            width: fit-content;
+            padding: auto 12px auto 12px;
+            text-align: center;
+            border: 1px solid #DEE2E6;
+            cursor: pointer;
+            background-color: #EEF2F7;
+            
+            div{
+                font-size: 13.6px;
+                color: #6C757C;
+                margin-left: 6px;
+                margin-right: 6px;
+            }
+        }
+        .product_profile-tabs-item-selected{
+            position: relative;
+            height: 40px;
+            width: 100%;
+            padding: auto 12px auto 12px;
+            text-align: left;
+            border: 1px solid #008CD6;
+            background-color: #00A0DF;
+            
+            
+            cursor: pointer;
+            div{
+                font-size: 13.6px;
+                color: #FFFFFF;
+                margin-left: 6px;
+                margin-right: 6px;
+            }
+        }
+    }
+    .patient-number-profiles{
+        display: grid;
+        grid-template-columns: 5.4fr 1fr;
+        flex-wrap: nowrap;
+        column-gap: 0;
+        align-items: center;
+        .patient-number-profiles-name{
+            div{
+                background-color: #F1F3FA66;
+                border: 1px solid #DEE2E6;
+            }
+        }
+        
+    }
+    .product-profile-indications{
+        margin-top: 40px;
+    }
+
+    .profile-number-input{
+        border-radius: none!important;
+        border: none;
+        border-bottom: 1px solid #DEE2E6!important;
+        text-indent: .5rem;
+
+        &:focus, &:active{
+            border: none!important;
+            outline: none;
+            border: 1px solid #008CD6!important;
+        }
+    }
+
+    .product_profile-tabs-item-brand-selected{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+
+.patient-simdilik{
+    display: flex;
+    flex-wrap: nowrap;
+
+    div{
+        width: 80%;
+    }
+    input{
+        width: 20%;
+        border-radius: 0!important;
+    }
+}
+.patient-simdilik{
+    border-radius: 0!important;
+    input:focus{
+        border: none!important;
+    }
+}

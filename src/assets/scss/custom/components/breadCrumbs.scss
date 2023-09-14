@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.breadcrumb{
+    margin: 10px 24px !important;
+    padding: 0 !important;
+    font-family: 'Roboto', sans-serif;
+    .ant-breadcrumb-separator{
+        color: #00a0df !important;
+    }
+}

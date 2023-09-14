@@ -1,0 +1,246 @@
+$border-color:#eeeff2;
+$permissions-color:#333;
+$passive-permissions-color:#999999;
+
+.permissions-tab {
+    .permission-assign-btn-col {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .permissions-table-assign-user {
+
+        background-color: #00A0DF;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        column-gap: 0;
+        border: none;
+        padding: 0;
+
+        border-radius: 2px;
+
+        span {
+            font-size: 12px;
+            color: #fff;
+            margin: 8px;
+        }
+
+        i {
+            font-size: 14.4px;
+            color: #fff;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            margin: 8px 4px;
+        }
+    }
+}
+
+.permissions-main{
+    background-color: #fff;
+}
+
+.permissions {
+
+    border-top: 2px solid $border-color;
+    .permissions-view {
+        margin-top: 20px;
+
+        .label-and-table {
+            margin: 15px 0 30px;
+        }
+        table {
+            position: relative;
+            display: table;
+            border-spacing: 0;
+            background: #fff;
+            border-color: #ebeff3;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .permissions-container {
+            .permission-block {
+                display: flex;
+                position: relative;
+
+                .permissions-for {
+                    flex-basis: 360px;
+                    // padding: 5px;
+                    border: none !important;
+
+                    .not-parent {
+                        margin-left: 20px;
+                    }
+
+                    .custom-checkbox {
+                        height: 20px;
+                        position: relative;
+                        text-align: left;
+
+                        
+                    }
+                }
+                
+                .privileges {
+                    flex-basis: auto;
+                    cursor: pointer;
+                    // padding: 5px 24px 5px 5px;
+                    padding-right: 24px;
+                    border: none !important;
+                    position: relative;
+                    vertical-align: middle;
+                    float: none;
+                    display: table-cell;
+
+                    .flex--2 {
+                        flex: 2;
+                        .last {
+                            &::after {
+                                content: none;
+                            }
+                        }
+                    }
+
+                    .flex--auto {
+                        // flex: 1 1 auto;
+
+                        .scope {
+                            max-width: 130px;
+                            font-size: 10px;
+
+                            .fsa-tag-content {
+                                line-height: 18px;
+                                height: 18px;
+                                display: flex;
+                                max-width: 100%;
+                                padding-left: 5px;
+                                padding-right: 5px;
+
+                                .tag-content {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display: inline-block;
+                                    background-color: #ebeff3;
+
+                                    span {
+                                        padding: 0 10px;
+                                        color: #999999;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .each-privilege {
+                        display: inline-block;
+                        margin-right: 20px;
+                        position: relative;
+                        font-weight: 500;
+                        color: $permissions-color;
+                        font-size: 12px;
+                        &::after {
+                            content: '';
+                            background: $permissions-color;
+                            width: 4px;
+                            height: 4px;
+                            position: absolute;
+                            border-radius: 10px;
+                            right: -12.5px;
+                            top: 45%;
+                        }
+                    }
+                    .passive {
+                        color: $passive-permissions-color;
+                        &::after {
+                            background-color:$passive-permissions-color ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .module-names {
+        ul {
+            list-style: none;
+            padding: 10px 0;
+            li {
+                cursor: pointer;
+                padding: 10px 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                a {
+                    font-size: 12px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+.assign-user-buttons {
+    margin: 0 24px;
+    height: 40px;
+    align-items: center;
+    .assgin-user {
+        cursor: pointer;
+    }
+    button {
+        color: #fff;
+        border: none;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .save-button {
+        background-color: #198754;
+        border-radius: 2px 2px 0px 2px;
+    }
+    .assign-user-button {
+        background-color: #00A0DF;
+        svg {
+            width: 14px;
+            height: 15px;
+        }
+    }
+    .text {
+        border-radius: 2px 0px 0px 2px;
+    }
+    .icon {
+        border-radius: 2px 2px 2px 0px;
+        margin-left: 1px;
+    }
+}
+
+.custom-checkbox-label {
+    // cursor: not-allowed;
+    user-select: none;
+    float: left;
+    font-weight: 400;
+    padding: 2px 0;
+    white-space: normal;
+    display: flex;
+
+    
+
+    input {
+        margin-right: 10px;
+        width: 18px;     
+    }
+
+    .checkbox-text {
+        white-space: nowrap;
+        max-width: 290px;
+        display: table-cell;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: 400;
+        font-size: 12px;
+        color: #333333;
+    }
+}

@@ -1,0 +1,61 @@
+.new-sub-process {
+    background-color: $color-white-a-130;
+    .new-sub-process-right-content {
+        padding: 0 $padding-lg * 1px !important;
+        .new-sub-process-section {
+            padding: $padding-lg * 1px 0;
+            margin-bottom: $margin-lg *1px;
+            .item {
+                margin-bottom: $margin-base * 1px;
+            }
+        }
+    }
+    .table-delete-icon{
+        color: $negative-90;
+    }
+    .expected-day {
+        padding-bottom: $padding-lg * 2px;
+    }
+}
+
+.sub-process-header {
+    .header-right {
+        margin-top: auto;
+        margin-bottom: $margin-sm * 1px;
+        .header-right-buttons {
+            display: flex;
+            justify-content: end;
+
+            .save-info-false {
+                background-color: rgba(242, 100, 100, 0.25);
+                color: $color-red-90;
+                margin-right: $margin-lg * 1px;
+                svg {
+                    font-size: 12px;
+                }
+            }
+            .save-info-true {
+                background-color: rgba(102, 242, 100, 0.25);
+                color: $color-green-90;
+                margin-right: $margin-lg * 1px;
+                svg {
+                    font-size: 12px;
+                }
+            }
+            .save-button {
+                margin-right: $margin-xs * 1px;
+            }
+        }
+    }
+}
+
+.new-sub-process-table-header {
+    font-size: $font-size-h5 * 1px;
+    margin-bottom: $margin-base * 1px;
+    font-weight: $font-weights-medium ;
+    color: $color-interaction-neutral-active;
+    display: flex;
+    .new-sub-process-table-add-button {
+        margin-left: auto;
+    }
+}

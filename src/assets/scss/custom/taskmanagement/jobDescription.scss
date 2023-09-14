@@ -1,0 +1,12 @@
+.job-description-add{
+    &__container{
+        display: grid;
+        row-gap: .7rem;
+        padding: 1.2rem;
+    }
+
+    datalist{
+        position: absolute!important;
+        
+    }
+}

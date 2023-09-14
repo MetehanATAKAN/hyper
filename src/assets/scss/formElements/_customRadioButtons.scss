@@ -1,0 +1,42 @@
+.custom-ant-radio-button.ant-radio-group{
+    font-family: $font-family;
+    padding: $margin-xs * 1px 0;
+    .ant-radio-wrapper{
+        height: 22px;
+        align-items: center;
+        // input{
+        //     align-self: baseline;
+        // }
+        .ant-radio{
+            top: 0!important;
+        }
+        
+    }
+    .ant-radio-inner{
+        .ant-radio{
+            border-color: $color-border-neutral-subtle;
+        }
+        .ant-radio-checked{
+            border-color: $color-content-informative-secondary;
+        }
+        
+        &::after{
+            background-color: $color-content-informative-secondary;
+        }
+    }
+
+    .ant-radio-wrapper{
+        margin-bottom: 0px!important;
+        span{
+            padding-right: 0;
+        }
+    }
+
+   
+}
+
+.custom-ant-radio-button-vertical.ant-radio-group{
+    display: grid;
+    row-gap: $margin-xs * 1px;
+    
+}

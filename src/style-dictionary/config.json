@@ -1,0 +1,111 @@
+{
+    "source": ["./src/style-dictionary/properties/**/*.json"],
+    "platforms": {
+      "scss": {
+        "transformGroup": "scss",
+        "buildPath": "./src/assets/scss/config2/",
+        "files": [
+            {
+              "destination": "_colors.scss",
+              "format": "scss/variables",
+              "filter": {
+                "type": "color"
+              }
+            },
+            {
+              "destination": "_shadows.scss",
+              "format": "scss/variables",
+              "filter": {
+                "type": "boxShadow"
+              }
+              
+            },
+            {
+              "destination": "_fontFamilies.scss",
+              "format": "scss/variables",
+              "filter": {
+                "type": "fontFamilies"
+              }
+            },
+            {
+              "destination": "_lineHeights.scss",
+              "format": "scss/variables",
+              "filter": {
+                "type": "lineHeights"
+              }
+            },
+            {
+              "destination": "_fontWeights.scss",
+              "format": "scss/variables",
+              "filter": {
+                "type": "fontWeights"
+              }
+            },
+            {
+              "destination": "_fontSizes.scss",
+              "format": "scss/variables",
+              "filter": {
+                "type": "fontSizes"
+              }
+            },
+            {
+                "destination": "_sizes.scss",
+                "format": "scss/variables",
+                "filter": {
+                  "type": "sizing"
+                }
+              },
+            {
+              "destination": "_typography.scss",
+              "format": "scss/variables",
+              "filter": {
+                "type": "typography"
+              }
+            },
+            {
+              "destination": "_textCase.scss",
+              "format": "scss/variables",
+              "filter": {
+                "type": "textCase"
+              }
+            },
+            {
+              "destination": "_textDecoration.scss",
+              "format": "scss/variables",
+              "filter": {
+                "type": "textDecoration"
+              }
+            },
+            {
+                "destination": "_borderRadius.scss",
+                "format": "scss/variables",
+                "filter": {
+                  "type": "borderRadius"
+                }
+            },
+            {
+              "destination": "_borderWidth.scss",
+              "format": "scss/variables",
+              "filter": {
+                "type": "borderWidth"
+              }
+          },
+            {
+                "destination": "_opacity.scss",
+                "format": "scss/variables",
+                "filter": {
+                  "type": "opacity"
+                }
+            },
+            {
+              "destination": "_spacing.scss",
+              "format": "scss/variables",
+              "filter": {
+                "type": "spacing"
+              }
+          }
+          ]
+      }
+    }
+  }
+  

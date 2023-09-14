@@ -1,0 +1,112 @@
+
+.task-management{
+    &__header{
+        margin: 1.6rem 0 1.6rem 0;
+    }
+    &__modal{
+        // border-radius: .6rem!important;
+        .modal-header{
+            background-color: #FFF!important;
+            color: #000!important;
+            padding: .3rem .7rem .3rem 1.4rem;
+        }
+        .modal-title{
+            margin: 0;
+        }
+        .modal-dialog{
+            .modal-content{
+                width: 550px;
+            }
+        }
+    }
+    .modal-dialog{
+        .modal-content{
+            .modal-body{
+                padding: 0!important;
+            }
+        }
+    }
+
+    // .css-1ecsaki-MuiTable-root.Table-table{
+    //     border-collapse: collapse!important;
+    // }
+
+    // table.Table-table{
+    //     border-collapse: collapse!important;
+    // }
+    
+}
+.task-management-modal-tabs-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
+    justify-content: center;
+    button{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+        img{
+            width: .7rem;
+            height: .7rem;
+        }
+        div{
+            font-size: .675rem;
+            white-space: nowrap;
+        }
+    }
+    .management-tab-active{
+
+        border-top: 1px solid #cccc!important;
+        border-left: 1px solid #ccc!important;
+        border-right: 1px solid #ccc!important;
+        border-bottom: 4px solid rgba(0, 0, 0, 0.5)!important;
+    }
+}
+.task-management__modal-close-btn{
+    border: none;
+    background-color: transparent;
+    i{
+        color: #6D747C!important;
+        font-size: 1.8rem;
+    }
+}
+
+.task-management__modal-body{
+    padding: 0!important;
+}
+
+.task-management-container{
+    background-color: #fff;
+    width: 100%;
+    min-height: 86vh;
+    padding: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .task-management{
+        &__header{
+            margin: 1.6rem 0 1.6rem 0;
+        }
+        &__modal{
+            .modal-dialog, .modal-content{
+                width: 400px!important;
+            }
+        }
+        
+    }
+    .task-management-modal-tabs-container{
+        button{
+            img{
+                width: .5rem;
+                height: .5rem;
+            }
+            div{
+                font-size: .5rem;
+                white-space: nowrap;
+            }
+        }
+    }
+}

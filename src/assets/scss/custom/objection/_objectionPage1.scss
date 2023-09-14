@@ -1,0 +1,43 @@
+.objection-index-modal{
+ max-height: calc(100vh - 200px);
+}
+.objection_main {
+    .objection_header {
+        .row {
+            margin-left: 1px;
+        }
+    }
+    .objection_body {
+        table {
+            text-align: left;
+            tbody {
+                tr {
+                    height: 31px;
+                    width: 260px;
+                    cursor: default;
+                    :nth-child(1){
+                        width: 50px;
+                    }
+                    :nth-child(2){
+                        width: 130px;
+                    }
+                    :nth-child(3){
+                        width: 150px;
+                    }
+                    .competitor_date {
+                        width: 100px;
+                    }
+                    .future_date {
+                        background-color: #CEF5EA !important;
+                    }
+                    .now_date {
+                        background-color: #FFF4D4 !important;
+                    }
+                    .past_date {
+                        background-color: #FEDEE5 !important;
+                    }
+                }
+            }
+        }
+    }
+}

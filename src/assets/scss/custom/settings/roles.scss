@@ -1,0 +1,105 @@
+
+.setting-role-table{
+    &__user{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        column-gap: 5px;
+
+        border: none;
+        background-color: transparent;
+
+        i{
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+        i, span{
+            color: #00A0DF;
+        }
+    }
+}
+
+
+.setting-role-create{
+    .create-role-checkbox-container{
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        place-items: center;
+
+        .form-check-input{
+            font-size: 1.07rem;
+        }
+        &__labels{
+            display: grid;
+            padding-left: 0;
+            font-size: .75rem;
+            &>label:nth-last-child(1){
+                font-weight: 400;
+            }
+        }
+    }
+
+    .create-role-checkbox-description{
+        padding: 1rem;
+        background-color: #00A0DF2E;
+        border-radius: 4px;
+        border: 1px solid #00A0DF40;
+    }
+}
+
+.settings-page{
+        .settings-filter-container{
+            margin: 1rem 0;
+            display: grid;
+            grid-template-columns: 1fr ;
+            gap: 1rem;
+            align-items: center;
+    
+    
+            .settings-filter-container-filters{
+    
+                display: flex;
+                flex-wrap: wrap;
+                gap: .8rem;
+                align-items: center;
+    
+                .label-text-field{
+                    white-space: wrap;
+                }
+    
+                .settings-filter-container-filters-date{
+                    border-radius: 20px;
+                    border: 1px solid #d9d9d9;
+                    height: 24px;
+                    background-color: #FAFBFE;
+                    color: rgba(0, 0, 0, 0.85);
+    
+                    // .ant-picker-input{
+                    //     input{
+                    //         color: ;
+                    //     }
+                    // }
+                }
+            }
+    
+            .settings-filter-container-buttons{
+                // width: fit-content;
+                display: flex;
+                // flex-wrap: nowrap;
+                // column-gap: .7rem;
+                // align-items: flex-end;
+                align-items: flex-end;
+                margin-left: auto;
+                column-gap: .7rem;
+                flex-wrap: nowrap;
+    
+                svg{
+                    cursor: pointer;
+                    border: 1px solid #DEE2E6;
+                    padding: 4px 8px;
+                    width: 35px !important;
+                    height: 27px !important;
+                }
+            }
+        }
+}

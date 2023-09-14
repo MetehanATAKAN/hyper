@@ -1,0 +1,60 @@
+.new {
+    .new_radio_button {
+        margin-bottom: 15px;
+
+        label {
+            margin-left: 10px;
+            color: #6C757D;
+            font-weight: 200;
+        }
+    }
+
+    .new_body_selects {
+        @for $i from 1 to 3 {
+            :nth-child(#{$i}) {
+                .row {
+                    margin: 0 1px 0 1px;
+
+                    textarea,
+                    input {
+                        border: 1px solid #DFE2E6;
+                        border-radius: 5px;
+                    }
+                    .title_input{
+                        height: 38px;
+                    }
+                }
+            }
+        }
+
+        :last-child {
+            .row {
+                margin: none;
+            }
+        }
+
+        label {
+            color: #343A40;
+        }
+
+        .select_div {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.coa {
+    label {
+        color: #6C757D;
+    }
+
+    .row {
+        margin: 0 1px 0 1px;
+
+        input {
+            border: 1px solid #DFE2E6;
+            border-radius: 5px;
+            height: 35px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.custom-navbar {
+    background-color: $color-background-default;
+    border-bottom: 1px solid $color-border-default;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0px 24px;
+    min-height: $topbar-height;
+    left: $leftbar-width;
+    z-index: 1001;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left {
+        font-size: 24px;
+        cursor: pointer;
+    }
+    &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: $color-content-primary;
+        @include typography-regular-base;
+        &__notification {
+            font-size: 22px;
+            width: 52px;
+            text-align: center;
+        }
+        &__theme-switch {
+            width: 52px;
+            text-align: center;
+        }
+        &__profile {
+            border-right: 1px solid $color-border-default;
+            border-left: 1px solid $color-border-default;
+            background: $color-background-neutral-surface;
+        }
+    }
+}
+body[data-leftbar-compact-mode='condensed']:not([data-layout='topnav']) {
+    .custom-navbar {
+        position: relative;
+        left: 0 !important;
+        margin: -$topbar-height (-$grid-gutter-width / 2) 0;
+    }
+}

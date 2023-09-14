@@ -1,0 +1,1215 @@
+@mixin custom-buttons-css(
+    $font-color: $color-action-inverted-normal,
+    $default-bg-color: $color-action-primary-normal,
+    $border-color: $color-action-primary-normal,
+    $border-radius: $border-radius,
+    $padding: $padding-base,
+    $height: $control-height,
+    $margin: $margin-base,
+    $hover-bg-color: $color-action-primary-hover,
+    $border-hover-color: $color-action-primary-hover,
+    $selected-bg-color: $color-action-primary-selected,
+    $border-selected-color: $color-action-primary-selected,
+    $active-bg-color: $color-action-primary-active,
+    $border-active-color: $color-action-primary-active,
+    $opacity: 1,
+    $btn-status: basic,
+    $shape: default
+) {
+    color: $font-color;
+    background: $default-bg-color;
+    border: 1px solid $border-color;
+    @if $shape == round {
+        border-radius: 999px;
+    } @else {
+        border-radius: $border-radius * 1px;
+    }
+    padding: 0 $padding-base * 1px;
+    height: $height * 1px;
+    gap: $margin * 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background: $hover-bg-color;
+        border: 1px solid $border-hover-color;
+        @if ($btn-status == danger) {
+            color: $color-action-destructive-hover;
+        } @else if($btn-status == success) {
+            color: $color-action-success-hover;
+        } @else {
+            color: $font-color;
+        }
+    }
+    &:focus {
+        background: $selected-bg-color;
+        border: 1px solid $border-selected-color;
+        @if ($btn-status == danger) {
+            color: $color-action-destructive-selected;
+        } @else if($btn-status == success) {
+            color: $color-action-success-selected;
+        } @else {
+            color: $font-color;
+        }
+    }
+    &:active {
+        background: $active-bg-color;
+        border: 1px solid $border-active-color;
+        @if ($btn-status == danger) {
+            color: $color-action-destructive-active;
+        } @else if($btn-status == success) {
+            color: $color-action-success-active;
+        } @else {
+            color: $font-color;
+        }
+    }
+    &:disabled {
+        background: $default-bg-color;
+        border: 1px solid $border-color;
+        opacity: $opacity;
+        color: $font-color;
+        &:hover {
+            background: $default-bg-color;
+            border: 1px solid $default-bg-color;
+            opacity: $opacity;
+            color: $font-color;
+        }
+    }
+}
+
+@mixin button-by-type-css-basic($type, $size: default) {
+    @if ($size == lg) {
+        @include typography-regular-lg;
+    } @else {
+        @include typography-regular-base;
+    }
+    @if ($type == primary) {
+        @if ($size == sm) {
+            @include custom-buttons-css(
+                $color-action-inverted-normal,
+                $color-action-primary-normal,
+                $color-action-primary-normal,
+                $border-radius-sm,
+                $padding-sm,
+                $control-height-sm,
+                $margin-base,
+                $color-action-primary-hover,
+                $color-action-primary-hover,
+                $color-action-primary-selected,
+                $color-action-primary-selected,
+                $color-action-primary-active,
+                $color-action-primary-active,
+                $disabled
+            );
+        } @else if($size == lg) {
+            @include custom-buttons-css(
+                $color-action-inverted-normal,
+                $color-action-primary-normal,
+                $color-action-primary-normal,
+                $border-radius,
+                $padding-base,
+                $control-height-lg,
+                $margin-base,
+                $color-action-primary-hover,
+                $color-action-primary-hover,
+                $color-action-primary-selected,
+                $color-action-primary-selected,
+                $color-action-primary-active,
+                $color-action-primary-active,
+                $disabled
+            );
+        } @else {
+            @include custom-buttons-css(
+                $color-action-inverted-normal,
+                $color-action-primary-normal,
+                $color-action-primary-normal,
+                $border-radius,
+                $padding-base,
+                $control-height,
+                $margin-base,
+                $color-action-primary-hover,
+                $color-action-primary-hover,
+                $color-action-primary-selected,
+                $color-action-primary-selected,
+                $color-action-primary-active,
+                $color-action-primary-active,
+                $disabled
+            );
+        }
+    } @else if ($type == text) {
+        @if ($size == sm) {
+            @include custom-buttons-css(
+                $color-action-neutral-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius-sm,
+                // border radius
+                $padding-sm,
+                // btn padding
+                $control-height-sm,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+            );
+        } @else if($size == lg) {
+            @include custom-buttons-css(
+                $color-action-neutral-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height-lg,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+            );
+        } @else {
+            @include custom-buttons-css(
+                $color-action-neutral-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+            );
+        }
+    } @else if ($type == link) {
+        @if ($size == sm) {
+            @include custom-buttons-css(
+                $color-action-primary-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius-sm,
+                // border radius
+                $padding-sm,
+                // btn padding
+                $control-height-sm,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+            );
+        } @else if($size == lg) {
+            @include custom-buttons-css(
+                $color-action-primary-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height-lg,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+            );
+        } @else {
+            @include custom-buttons-css(
+                $color-action-primary-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+            );
+        }
+    } @else {
+        @if ($size == sm) {
+            @include custom-buttons-css(
+                $color-action-neutral-normal,
+                // font color
+                $color-action-inverted-normal,
+                // default-bg-color
+                $color-action-outline-normal,
+                // default-border-color
+                $border-radius-sm,
+                $padding-sm,
+                $control-height-sm,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-inverted-normal,
+                // hover bg color
+                $color-action-outline-hover,
+                // hover border color
+                $color-action-inverted-normal,
+                // selected bg color
+                $color-action-outline-selected,
+                // selected border color
+                $color-action-inverted-normal,
+                // active bg color
+                $color-action-outline-active,
+                // active border color
+                $disabled // btn opacity
+            );
+        } @else if($size == lg) {
+            @include custom-buttons-css(
+                $color-action-neutral-normal,
+                // font color
+                $color-action-inverted-normal,
+                // default-bg-color
+                $color-action-outline-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height-lg,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-inverted-normal,
+                // hover bg color
+                $color-action-outline-hover,
+                // hover border color
+                $color-action-inverted-normal,
+                // selected bg color
+                $color-action-outline-selected,
+                // selected border color
+                $color-action-inverted-normal,
+                // active bg color
+                $color-action-outline-active,
+                // active border color
+                $disabled // btn opacity
+            );
+        } @else {
+            @include custom-buttons-css(
+                $color-action-neutral-normal,
+                // font color
+                $color-action-inverted-normal,
+                // default-bg-color
+                $color-action-outline-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-inverted-normal,
+                // hover bg color
+                $color-action-outline-hover,
+                // hover border color
+                $color-action-inverted-normal,
+                // selected bg color
+                $color-action-outline-selected,
+                // selected border color
+                $color-action-inverted-normal,
+                // active bg color
+                $color-action-outline-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+            );
+        }
+    }
+}
+
+//                      ---------DANGER------------
+
+@mixin button-by-type-css-danger($type, $size: default) {
+    @if ($size == lg) {
+        @include typography-regular-lg;
+    } @else {
+        @include typography-regular-base;
+    }
+    @if ($type == primary) {
+        @if ($size == sm) {
+            @include custom-buttons-css(
+                $color-action-inverted-normal,
+                // font color
+                $color-action-destructive-normal,
+                // default-bg-color
+                $color-action-destructive-normal,
+                // default-border-color
+                $border-radius-sm,
+                // border radius
+                $padding-sm,
+                // btn padding
+                $control-height-sm,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-destructive-hover,
+                // hover bg color
+                $color-action-destructive-hover,
+                // hover border color
+                $color-action-destructive-selected,
+                // selected bg color
+                $color-action-destructive-selected,
+                // selected border color
+                $color-action-destructive-active,
+                // active bg color
+                $color-action-destructive-active,
+                // active border color
+                $disabled // btn opacity,
+            );
+        } @else if($size == lg) {
+            @include custom-buttons-css(
+                $color-action-inverted-normal,
+                // font color
+                $color-action-destructive-normal,
+                // default-bg-color
+                $color-action-destructive-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height-lg,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-destructive-hover,
+                // hover bg color
+                $color-action-destructive-hover,
+                // hover border color
+                $color-action-destructive-selected,
+                // selected bg color
+                $color-action-destructive-selected,
+                // selected border color
+                $color-action-destructive-active,
+                // active bg color
+                $color-action-destructive-active,
+                // active border color
+                $disabled // btn opacity,
+            );
+        } @else {
+            @include custom-buttons-css(
+                $color-action-inverted-normal,
+                // font color
+                $color-action-destructive-normal,
+                // default-bg-color
+                $color-action-destructive-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-destructive-hover,
+                // hover bg color
+                $color-action-destructive-hover,
+                // hover border color
+                $color-action-destructive-selected,
+                // selected bg color
+                $color-action-destructive-selected,
+                // selected border color
+                $color-action-destructive-active,
+                // active bg color
+                $color-action-destructive-active,
+                // active border color
+                $disabled // btn opacity,
+            );
+        }
+    } @else if ($type == text) {
+        @if ($size == sm) {
+            @include custom-buttons-css(
+                $color-action-destructive-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius-sm,
+                // border radius
+                $padding-sm,
+                // btn padding
+                $control-height-sm,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                danger
+            );
+        } @else if($size == lg) {
+            @include custom-buttons-css(
+                $color-action-destructive-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height-lg,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                danger
+            );
+        } @else {
+            @include custom-buttons-css(
+                $color-action-destructive-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                danger
+            );
+        }
+    } @else if ($type == link) {
+        @if ($size == sm) {
+            @include custom-buttons-css(
+                $color-action-destructive-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius-sm,
+                // border radius
+                $padding-sm,
+                // btn padding
+                $control-height-sm,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                danger
+            );
+        } @else if($size == lg) {
+            @include custom-buttons-css(
+                $color-action-destructive-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height-lg,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                danger
+            );
+        } @else {
+            @include custom-buttons-css(
+                $color-action-destructive-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                danger
+            );
+        }
+    } @else {
+        @if ($size == sm) {
+            @include custom-buttons-css(
+                $color-action-destructive-normal,
+                // font color
+                $color-action-inverted-normal,
+                // default-bg-color
+                $color-action-outline-normal,
+                // default-border-color
+                $border-radius-sm,
+                // border radius
+                $padding-sm,
+                // btn padding
+                $control-height-sm,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-inverted-normal,
+                // hover bg color
+                $color-action-outline-hover,
+                // hover border color
+                $color-action-inverted-normal,
+                // selected bg color
+                $color-action-outline-selected,
+                // selected border color
+                $color-action-inverted-normal,
+                // active bg color
+                $color-action-outline-active,
+                // active border color
+                $disabled,
+                // btn opacity
+                danger
+            );
+        } @else if($size == lg) {
+            @include custom-buttons-css(
+                $color-action-destructive-normal,
+                // font color
+                $color-action-inverted-normal,
+                // default-bg-color
+                $color-action-outline-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height-lg,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-inverted-normal,
+                // hover bg color
+                $color-action-outline-hover,
+                // hover border color
+                $color-action-inverted-normal,
+                // selected bg color
+                $color-action-outline-selected,
+                // selected border color
+                $color-action-inverted-normal,
+                // active bg color
+                $color-action-outline-active,
+                // active border color
+                $disabled,
+                // btn opacity
+                danger
+            );
+        } @else {
+            @include custom-buttons-css(
+                $color-action-destructive-normal,
+                // font color
+                $color-action-inverted-normal,
+                // default-bg-color
+                $color-action-outline-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-inverted-normal,
+                // hover bg color
+                $color-action-outline-hover,
+                // hover border color
+                $color-action-inverted-normal,
+                // selected bg color
+                $color-action-outline-selected,
+                // selected border color
+                $color-action-inverted-normal,
+                // active bg color
+                $color-action-outline-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                danger
+            );
+        }
+    }
+}
+
+//----------------------------------SUCCESSS-------------------------------
+
+@mixin button-by-type-css-success($type, $size: default) {
+    @if ($size == lg) {
+        @include typography-regular-lg;
+    } @else {
+        @include typography-regular-base;
+    }
+    @if ($type == primary) {
+        @if ($size == sm) {
+            @include custom-buttons-css(
+                $color-action-inverted-normal,
+                // font color
+                $color-action-success-normal,
+                // default-bg-color
+                $color-action-success-normal,
+                // default-border-color
+                $border-radius-sm,
+                // border radius
+                $padding-sm,
+                // btn padding
+                $control-height-sm,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-success-hover,
+                // hover bg color
+                $color-action-success-hover,
+                // hover border color
+                $color-action-success-selected,
+                // selected bg color
+                $color-action-success-selected,
+                // selected border color
+                $color-action-success-active,
+                // active bg color
+                $color-action-success-active,
+                // active border color
+                $disabled // btn opacity,
+            );
+        } @else if($size == lg) {
+            @include custom-buttons-css(
+                $color-action-inverted-normal,
+                // font color
+                $color-action-success-normal,
+                // default-bg-color
+                $color-action-success-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height-lg,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-success-hover,
+                // hover bg color
+                $color-action-success-hover,
+                // hover border color
+                $color-action-success-selected,
+                // selected bg color
+                $color-action-success-selected,
+                // selected border color
+                $color-action-success-active,
+                // active bg color
+                $color-action-success-active,
+                // active border color
+                $disabled // btn opacity,
+            );
+        } @else {
+            @include custom-buttons-css(
+                $color-action-inverted-normal,
+                // font color
+                $color-action-success-normal,
+                // default-bg-color
+                $color-action-success-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-success-hover,
+                // hover bg color
+                $color-action-success-hover,
+                // hover border color
+                $color-action-success-selected,
+                // selected bg color
+                $color-action-success-selected,
+                // selected border color
+                $color-action-success-active,
+                // active bg color
+                $color-action-success-active,
+                // active border color
+                $disabled // btn opacity,
+            );
+        }
+    } @else if ($type == text) {
+        @if ($size == sm) {
+            @include custom-buttons-css(
+                $color-action-success-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius-sm,
+                // border radius
+                $padding-sm,
+                // btn padding
+                $control-height-sm,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                success
+            );
+        } @else if($size == lg) {
+            @include custom-buttons-css(
+                $color-action-success-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height-lg,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                success
+            );
+        } @else {
+            @include custom-buttons-css(
+                $color-action-success-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                success
+            );
+        }
+    } @else if ($type == link) {
+        @if ($size == sm) {
+            @include custom-buttons-css(
+                $color-action-success-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius-sm,
+                // border radius
+                $padding-sm,
+                // btn padding
+                $control-height-sm,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                success
+            );
+        } @else if($size == lg) {
+            @include custom-buttons-css(
+                $color-action-success-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height-lg,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                success
+            );
+        } @else {
+            @include custom-buttons-css(
+                $color-action-success-normal,
+                // font color
+                $color-action-ghost-normal,
+                // default-bg-color
+                $color-action-ghost-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-ghost-hover,
+                // hover bg color
+                $color-action-ghost-hover,
+                // hover border color
+                $color-action-ghost-selected,
+                // selected bg color
+                $color-action-ghost-selected,
+                // selected border color
+                $color-action-ghost-active,
+                // active bg color
+                $color-action-ghost-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                success
+            );
+        }
+    } @else {
+        @if ($size == sm) {
+            @include custom-buttons-css(
+                $color-action-success-normal,
+                // font color
+                $color-action-inverted-normal,
+                // default-bg-color
+                $color-action-outline-normal,
+                // default-border-color
+                $border-radius-sm,
+                // border radius
+                $padding-sm,
+                // btn padding
+                $control-height-sm,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-inverted-normal,
+                // hover bg color
+                $color-action-outline-hover,
+                // hover border color
+                $color-action-inverted-normal,
+                // selected bg color
+                $color-action-outline-selected,
+                // selected border color
+                $color-action-inverted-normal,
+                // active bg color
+                $color-action-outline-active,
+                // active border color
+                $disabled,
+                // btn opacity
+                success
+            );
+        } @else if($size == lg) {
+            @include custom-buttons-css(
+                $color-action-success-normal,
+                // font color
+                $color-action-inverted-normal,
+                // default-bg-color
+                $color-action-outline-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height-lg,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-inverted-normal,
+                // hover bg color
+                $color-action-outline-hover,
+                // hover border color
+                $color-action-inverted-normal,
+                // selected bg color
+                $color-action-outline-selected,
+                // selected border color
+                $color-action-inverted-normal,
+                // active bg color
+                $color-action-outline-active,
+                // active border color
+                $disabled,
+                // btn opacity
+                success
+            );
+        } @else {
+            @include custom-buttons-css(
+                $color-action-success-normal,
+                // font color
+                $color-action-inverted-normal,
+                // default-bg-color
+                $color-action-outline-normal,
+                // default-border-color
+                $border-radius,
+                // border radius
+                $padding-base,
+                // btn padding
+                $control-height,
+                //btn height
+                $margin-base,
+                // btn margin
+                $color-action-inverted-normal,
+                // hover bg color
+                $color-action-outline-hover,
+                // hover border color
+                $color-action-inverted-normal,
+                // selected bg color
+                $color-action-outline-selected,
+                // selected border color
+                $color-action-inverted-normal,
+                // active bg color
+                $color-action-outline-active,
+                // active border color
+                $disabled,
+                // btn opacity,
+                success
+            );
+        }
+    }
+}

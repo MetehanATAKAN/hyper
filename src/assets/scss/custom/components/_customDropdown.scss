@@ -1,0 +1,31 @@
+.custom-dropdown,
+.ant-dropdown-menu-submenu {
+    .dropdown-content {
+        box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+        overflow: hidden;
+    }
+    ul {
+        padding: $padding-xxs * 1px;
+    }
+    li {
+        @include typography-regular-base;
+        border-radius: $border-radius * 1px;
+
+        &:hover {
+            background-color: $color-interaction-ghost-hover;
+        }
+    }
+    li.ant-dropdown-menu-item-danger {
+        color: $color-action-destructive-normal;
+        &:hover {
+            color: $color-action-destructive-hover;
+            background-color: $color-interaction-ghost-destructive-hover;
+        }
+    }
+    .dropdown-content .ant-dropdown-menu {
+        box-shadow: none;
+    }
+    .ant-dropdown-menu-submenu-expand-icon {
+        top: 2px;
+    }
+}

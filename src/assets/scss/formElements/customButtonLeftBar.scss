@@ -1,0 +1,34 @@
+.custom-page-left-bar {
+    width: 100%;
+    font-family: $font-family;
+    color: $color-action-neutral-normal;
+
+    button{
+        width: 100%;
+        padding: $padding-xs * 1px $padding-base * 1px;
+        display: flex;
+        align-items: center;
+        
+        column-gap: $margin-sm * 1px;
+        background-color: $color-background-default;
+
+        border-right: 1px solid $color-border-default;
+        border-bottom: 1px solid $color-border-default;
+        border-left: 1px solid $color-border-default;
+        border-top: none;
+    }
+
+    button:first-child{
+        border: 1px solid $color-border-default;
+        border-radius: $border-radius-md * 1px $border-radius-md * 1px 0px 0px;
+    }
+
+    button:last-child{
+        border-radius: 0px 0px $border-radius-md * 1px $border-radius-md * 1px;
+    }
+
+    .custom-page-left-bar-true{
+        color: $color-action-inverted-normal;
+        background-color: $color-action-primary-active;
+    }
+}

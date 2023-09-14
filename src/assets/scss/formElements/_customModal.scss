@@ -1,0 +1,94 @@
+
+.ant-modal-mask{
+    z-index: 10001!important;
+    background-color: $color-interaction-background-default-dimmer!important;
+}
+
+.ant-modal-wrap.wrapperdeneme{
+    
+    z-index: 10002;
+
+    .ant-modal{
+        box-shadow: 0px 2px 2px -1px rgba(27, 36, 44, 0.04), 0px 8px 16px -2px rgba(27, 36, 44, 0.12);
+        border-radius: $border-radius-lg * 1px;
+    }
+    
+    .ant-modal-content{
+        border-radius: $border-radius-lg * 1px;
+        
+        // overflow-y: auto;
+    
+        .ant-modal-body{
+            // display: flex;
+            padding: $padding-xxs * 1px $padding-lg * 1px $padding-sm * 1px $padding-lg * 1px;
+            // align-items: center;
+            // align-self: stretch;
+            overflow-y: auto;
+            max-height: calc(100vh - 128px);
+
+                label {
+                    color: $color-content-primary;
+                    margin-bottom: $margin-xxs * 1px;
+                    font-size: $font-size-base * 1px;
+                    font-weight: 400;
+                 }
+            
+                 > div:not(:last-child){
+                    margin-bottom: $margin-base * 1px
+                 }
+        }
+    }
+    .ant-modal-header{
+        border-radius: $border-radius-lg * 1px $border-radius-lg * 1px 0 0;
+        padding: $padding-base * 1px $padding-lg * 1px $padding-xs * 1px $padding-lg * 1px;
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        
+        .ant-modal-title{
+            color: $color-content-primary;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: $font-family;
+            font-size: $font-size-lg * 1px;
+            font-style: normal;
+            font-weight: $font-weights-semi-bold;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+        }
+    
+        .ant-modal-close{
+            width: $font-size-base * 1px;
+            height: $font-size-base  * 1px;
+            color: $color-cool-grey-100;
+        }
+    }
+    .ant-modal-footer{
+        border-radius: 0 0 $border-radius-lg * 1px $border-radius-lg * 1px;
+        border-top: none;
+        display: flex;
+        padding: 0px $padding-lg * 1px $padding-lg * 1px $padding-lg * 1px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: $margin-xs;
+        align-self: stretch;
+
+        button{
+            border-radius: $border-radius-lg * 1px;
+
+            &:disabled{
+                opacity: $disabled;
+            }
+        }
+    }
+}
+
+.ant-modal-wrap .ant-modal-footer button:disabled{
+    opacity: $disabled;
+}
+
+// .ant-modal-wrap{
+//     z-index: 10002;
+// }
+

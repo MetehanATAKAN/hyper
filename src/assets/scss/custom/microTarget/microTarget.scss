@@ -1,0 +1,107 @@
+.micro-target {
+    .table-top-toolbar-menu {
+        .table-days {
+            display: table;
+            .active {
+                background-color: #00a0df;
+                color: #FFFFFF;
+            }
+            button {
+                &:nth-child(1) {
+                    margin-left: 24px;
+                }
+                all: unset;
+                padding: 8px;
+                border-radius: 8px;
+                color: black;
+                margin-left: 8px;
+                cursor: pointer;
+                width: 30px;
+                text-align: center;
+                color: #6C757D;
+                font-weight: 600;
+            }
+        }
+    }
+    .MuiTableBody-root {
+        tr {
+            opacity: 1 !important;
+        }
+        .MuiTableRow-root {
+            td {
+                border: none !important;
+                border-bottom: 1px solid rgba(224, 224, 224, 1) !important;
+                opacity: 1 !important ;
+            }
+        }
+    }
+        .table-filter-area {
+            background-color: #eef2f7;
+            width: 100%;
+            padding: 16px 24px;
+    
+            .global-filter {
+                .global-filter-container {
+                    grid-template-columns: repeat(auto-fit, minmax(207px, 1fr)) !important;
+    
+                    .ant-radio-group {
+                        display: flex;
+    
+                        .planning {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            height: 45px;
+                            span.ant-radio+* {
+                                padding-top: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+}
+.drag-drop-tables {
+    .MuiTable-root {
+    .Mui-TableHeadCell-Content {
+            -webkit-align-items: flex-start;
+            -webkit-box-align: flex-start;
+            -ms-flex-align: flex-start;
+            align-items: flex-start;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            .Mui-TableHeadCell-Content-Wrapper {
+                color: #6C757D;
+            }
+        }
+        tbody {
+            td {
+                height: 39.83px !important;
+            }
+        }
+    }
+    .MuiTableBody-root {
+        tr {
+            opacity: 1 !important;
+        }
+        .MuiTableRow-root {
+            td {
+                border: none !important;
+                border-bottom: 1px solid rgba(224, 224, 224, 1) !important;
+                opacity: 1 !important ;
+            }
+        }
+    }
+}

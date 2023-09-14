@@ -1,0 +1,187 @@
+// 
+// modal.scss
+//
+
+// Title text within header
+.modal-title {
+    margin-top: 0;
+}
+
+// Modal full width
+.modal-full-width {
+    width: 95%;
+    max-width: none;
+}
+
+// Modal Positions
+.modal-top {
+    margin: 0 auto;
+}
+
+// Right Modal
+.modal-right {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    background-color: $modal-content-bg;
+    align-content: center;
+    transform: translate(25%,0) !important;
+
+    button.btn-close {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+    }
+}
+.fade {
+    transition: none;
+}
+.modal {
+    &.show {
+        // .modal-right, .modal-left {
+        //     transform: translate(0,0) !important;
+        // }
+
+       .modal-dialog {
+           //margin: auto;
+        //    transform: translate(0px,50%);
+           position: absolute;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%, -50%);
+           width: 100%;
+           transition: none !important;
+           .modal-content {
+            .modal-header{
+                background-color:#02A0DF;
+                color: #FFFFFF;
+                .btn-close {
+                    color: red;
+                }
+            }
+           }
+           @media (min-width:576px) {
+            margin: 0 !important;
+           }
+       }
+    }
+    .modal-body {
+        padding: 1rem 1rem 0 1rem;
+    }
+}
+
+// Bottom modal
+.modal-bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 100%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+// Colored modal header
+.modal-colored-header {
+    color: $white;
+    border-radius: 0;
+
+    .btn-close {
+        color: $white !important;
+    }
+}
+
+// Full filled modals
+.modal-filled {
+    color: $white;
+    
+    .modal-header {
+        background-color: rgba($white,0.07);
+    }
+
+    .modal-header,.modal-footer {
+        border: none;
+    }
+
+    .btn-close {
+        color: $white !important;
+    }
+}
+
+
+// Model
+.modal-open {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.visit-activity-modal{
+
+    #modal-title{
+        margin-bottom: 0;
+        padding-top: 5px;
+    }
+    &__header {
+        background-color:#FFFFFF !important;
+        color: #6c757d !important;
+        padding: 12px !important;
+    }
+    &__body {
+        background-color:#FFFFFF !important;
+        color: #6c757d !important;
+        padding: 12px !important;
+    }
+    &__footer{
+        background-color:#FFFFFF !important;
+        padding: 12px !important;
+    }
+}
+.homepage-modal-header{
+    background-color:#FFFFFF!important;
+    padding: 16px 24px 16px 24px!important;
+    border-bottom: 1px solid #DEE2E6 !important;
+    .modal-title{
+        margin: 0!important;
+        h4{
+            margin: 0 !important; 
+            color: #6C757D !important;
+            font-weight: 500;
+            font-size: 18px!important;
+        }
+        
+    }
+    .rm-close-button-cont{
+        padding: 0!important;
+        cursor: pointer;
+        .rm-close-button{
+            font-size: 24px;
+            color: #6C757D !important;
+        }
+    }
+}
+.home-page-modal-body-first{
+    height: min-content!important;
+}
+
+.home-page-modal-body-next{
+    max-height: 500px;
+}
+.homepage-modal-header2{
+    background-color:#fff!important;
+    .modal-title{
+        margin: 0 !important; 
+    }
+    border-bottom: 1px solid #e5e5e5!important;
+    .rm-close-button{
+        color: rgba(0, 0, 0,0.5)!important;
+    }
+}
+.finish-modal{
+    .modal-dialog{
+        max-width: 250px;
+    }
+}

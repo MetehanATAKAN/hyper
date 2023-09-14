@@ -1,0 +1,9 @@
+.form-check-input:checked{
+    color: #2759cd;
+    background-color: #2759cd;
+}
+.required {
+    color: $color-content-negative-secondary;
+    margin-right: $margin-xxs * 1px;
+    font-size: $font-size-base * 1px;
+}

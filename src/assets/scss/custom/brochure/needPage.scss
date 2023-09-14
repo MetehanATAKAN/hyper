@@ -1,0 +1,252 @@
+.brochure-templates{
+    .brochure-nav-tabs{
+        display: flex;
+        flex-wrap: nowrap;
+        .need-tab-link{
+            display: flex;
+            flex-wrap: nowrap;
+            span:nth-child(2){
+                white-space: nowrap;
+                font-size: .85rem;
+            }
+        }
+    }
+    .need-tab-link{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: .2rem;
+        .need-tab-link__icon{
+            svg{
+                width: 1.1rem !important;
+                height: 1.1rem !important;
+            }
+        }
+    }
+    //Budget new button
+    .new-buttons{
+        margin-top: auto;
+        margin-left: auto;
+    }
+}
+
+.need-page{
+    .need-filter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .rmsc {
+            width: 8.5rem;
+            // min-width: fit-content;
+            border: none;
+            outline: none;
+            margin-right: 10px;
+            margin-bottom: 0px;
+    
+            .dropdown-container {
+                border: none !important;
+                width: auto;
+                outline: none;
+    
+                &:focus-within {
+                    border: none !important;
+                    box-shadow: none !important;
+                }
+            }
+    
+            .dropdown-heading {
+                width: auto;
+                border: 1px solid #DEE2E6 !important;
+                border-radius: 20px !important;
+                outline: none;
+                background: #FFFFFF;
+                height: 27px;
+    
+                .dropdown-heading-value {
+                    width: auto;
+                }
+            }
+        }
+    
+        .rmsc * {
+            color: #6C757D;
+        }
+        .rmsc .dropdown-container {
+            height: 27px;
+            border: none;
+        }
+    }
+
+    .need-filter__buttons{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        column-gap: .7rem;
+        margin-right: .8rem;
+        
+        button{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            border: 1px solid rgba(108, 117, 125, 0.3);
+            border-radius: 2px;
+            svg{
+                width: 1.3rem !important;
+                height: 1.3rem !important;
+            }
+        }
+    }
+
+    
+}
+
+.add-need-modal{
+    .rmsc{
+        & > div {
+            border: 1px solid #dee2e6;
+            background-color: #FAFBFE !important;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+        .dropdown-container{
+            position: relative;
+            outline: 0!important;
+            background-color: var(--rmsc-bg);
+            border: 1px solid var(--rmsc-border);
+            border-radius: var(--rmsc-radius);
+
+            &:focus-within {
+                border: none !important;
+                box-shadow: none !important;
+            }
+        }
+
+        .dropdown-heading {
+            width: auto;
+            border: 1px solid #DEE2E6 !important;
+            outline: none;
+            height: 100%;
+            background: #FFFFFF;
+            .dropdown-heading-value {
+                width: auto;
+            }
+        }
+        
+        // border: 1px solid #dee2e6;
+        // background-color: #FAFBFE !important;
+        // border-radius: 4px;
+        // margin-bottom: 16px;
+    }
+}
+
+.disadvantage-page-gallery-filter{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .rmsc {
+            width: 8.5rem;
+            // min-width: fit-content;
+            border: none;
+            outline: none;
+            margin-right: 10px;
+            margin-bottom: 0px;
+    
+            .dropdown-container {
+                border: none !important;
+                width: auto;
+                outline: none;
+    
+                &:focus-within {
+                    border: none !important;
+                    box-shadow: none !important;
+                }
+            }
+    
+            .dropdown-heading {
+                width: auto;
+                border: 1px solid #DEE2E6 !important;
+                border-radius: 20px !important;
+                outline: none;
+                background: #FFFFFF;
+                height: 27px;
+    
+                .dropdown-heading-value {
+                    width: auto;
+                }
+            }
+        }
+    
+        .rmsc * {
+            color: #6C757D;
+        }
+        .rmsc .dropdown-container {
+            height: 27px;
+            border: none;
+        }
+        .need-filter__buttons{
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            column-gap: .7rem;
+            margin-right: .8rem;
+            
+            button{
+                border: none;
+                outline: none;
+                background-color: transparent;
+                border: 1px solid rgba(108, 117, 125, 0.3);
+                border-radius: 2px;
+                svg{
+                    width: 1.3rem !important;
+                    height: 1.3rem !important;
+                }
+            }
+        }
+}
+
+
+@media screen and (max-width: 1450px){
+    .brochure-templates{
+        .brochure-nav-tabs{
+            .need-tab-link{
+                span:nth-child(2){
+                    white-space: nowrap;
+                    font-size: .70rem;
+                }
+            }
+        }
+        .need-tab-link{
+            .need-tab-link__icon{
+                svg{
+                    width: .8rem !important;
+                    height: .8rem !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .brochure-templates{
+        .brochure-nav-tabs{
+            .nav-link{
+                padding: .5rem .5rem;
+            }
+            .need-tab-link{
+                span:nth-child(2){
+                    white-space: nowrap;
+                    font-size: .6rem;
+                }
+            }
+        }
+        .need-tab-link{
+            .need-tab-link__icon{
+                svg{
+                    width: .7rem !important;
+                    height: .7rem !important;
+                }
+            }
+        }
+    }
+}
