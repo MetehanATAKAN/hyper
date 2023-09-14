@@ -28,7 +28,7 @@ const ActivityTypeHeader = () => {
                 }
             ],
          },
-        { label: 'Activity Type' },
+        { label: 'Activity Typee' },
     ];
 
   return (
